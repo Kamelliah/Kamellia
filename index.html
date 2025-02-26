@@ -23,8 +23,9 @@
     <section id="profile">
         <img src="images/your-photo.jpg" alt="Kamellia Hyacinth" class="profile-pic">
         <h2>Kamellia Hyacinth</h2>
-        <p><strong>Master of Science in Healthcare Administration</strong>, 2025<br>University of Wisconsin La Crosse</p>
-        <p><strong>Bachelor of Science in Information Technology</strong>, 2015<br>St. George's University</p>
+        <p><strong>M.Sc. Candidate in Healthcare Administration</strong></p>
+        <p>University of Wisconsin La Crosse</p>
+        <p><a href="https://www.uwlax.edu/faculty-senate/committees/faculty-committees/policy/#tm-25265" target="_blank">Graduate Student Council Member</a></p>
         <p><strong>Military Service:</strong> U.S. Army | 2021 – 2024 | Honorable Discharge</p>
         <div class="social-links">
             <a href="mailto:kamelliahyacinth@gmail.com" title="Email"><img src="images/email-icon.png" alt="Email"></a>
@@ -84,19 +85,34 @@
     </footer>
 
     <script>
-        const themeToggle = document.getElementById("themeToggle");
-        function setTheme(theme) {
-            document.documentElement.setAttribute("data-theme", theme);
-            localStorage.setItem("theme", theme);
-            themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+        function setThemeBasedOnTime() {
+            const hour = new Date().getHours();
+            if (hour >= 6 && hour < 18) {
+                document.documentElement.setAttribute("data-theme", "light");
+                localStorage.setItem("theme", "light");
+                themeToggle.textContent = "🌙";
+            } else {
+                document.documentElement.setAttribute("data-theme", "dark");
+                localStorage.setItem("theme", "dark");
+                themeToggle.textContent = "☀️";
+            }
         }
+        
+        const themeToggle = document.getElementById("themeToggle");
         themeToggle.addEventListener("click", () => {
             const currentTheme = localStorage.getItem("theme") || "light";
-            setTheme(currentTheme === "dark" ? "light" : "dark");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+            themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙";
         });
+        
         document.addEventListener("DOMContentLoaded", () => {
-            const savedTheme = localStorage.getItem("theme") || "light";
-            setTheme(savedTheme);
+            if (!localStorage.getItem("theme")) {
+                setThemeBasedOnTime();
+            } else {
+                document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
+            }
         });
     </script>
 </body>
