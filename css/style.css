@@ -7,6 +7,8 @@
     --light-bg: #f8f9fa;
     --text-dark: #212529;
     --text-light: #ffffff;
+    --button-bg: #007bff;
+    --button-hover: #0056b3;
 }
 
 body {
@@ -15,6 +17,8 @@ body {
     color: var(--text-dark);
     margin: 0;
     padding: 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 [data-theme="dark"] {
@@ -83,7 +87,7 @@ h2 {
     width: 50px;
     height: 50px;
     margin: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--button-bg);
     border-radius: 50%;
     transition: 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -96,12 +100,12 @@ h2 {
 }
 
 .social-links a:hover {
-    background-color: #0056b3;
+    background-color: var(--button-hover);
 }
 
 .button {
     padding: 12px 25px;
-    background-color: var(--primary-color);
+    background-color: var(--button-bg);
     color: var(--secondary-color);
     border: none;
     border-radius: 5px;
@@ -114,7 +118,7 @@ h2 {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: var(--button-hover);
 }
 
 .container {
