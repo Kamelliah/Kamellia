@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Your Name - Web Developer, Designer, and Engineer.">
-    <title>Your Name</title>
+    <meta name="description" content="Portfolio of Kamellia Hyacinth - Web Developer, Designer, and Engineer.">
+    <title>Kamellia Hyacinth</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Kamellia Hyacinth</h1>
-        <p>Web Developer | Designer | Engineer</p>
+        <nav>
+            <h1>Kamellia Hyacinth</h1>
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button id="themeToggle">🌙</button>
+        </nav>
     </header>
+
+    <section id="profile">
+        <img src="images/your-photo.jpg" alt="Kamellia Hyacinth" class="profile-pic">
+        <h2>Kamellia Hyacinth</h2>
+        <p><strong>Master of Science in Healthcare Administration</strong>, 2025<br>University of Wisconsin La Crosse</p>
+        <p><strong>Bachelor of Science in Information Technology</strong>, 2015<br>St. George's University</p>
+        <p><strong>Military Service:</strong> U.S. Army | 2021 – 2024 | Honorable Discharge</p>
+        <div class="social-links">
+            <a href="mailto:kamelliahyacinth@gmail.com">✉️</a>
+            <a href="https://www.linkedin.com/in/kamellia" target="_blank">🔗</a>
+            <a href="Kamellia_Hyacinth_Resume_.pdf" download>📄</a>
+        </div>
+    </section>
 
     <section id="about">
         <h2>About Me</h2>
         <p>I'm a developer specializing in modern web technologies.</p>
     </section>
-     <section id="education">
+
+    <section id="education">
         <h2>Education</h2>
         <p><strong>Master of Science in Healthcare Administration</strong>, 2025<br>University of Wisconsin La Crosse</p>
         <p><strong>Bachelor of Science in Information Technology</strong>, 2015<br>St. George's University</p>
+    </section>
+
+    <section id="memberships">
+        <h2>Professional Memberships</h2>
+        <p>Member, American College of Healthcare Executives</p>
+        <p>Member, Wisconsin Public Health Association</p>
     </section>
 
     <section id="projects">
@@ -33,7 +57,7 @@
             <h3>Project 2</h3>
             <p>Description of another project.</p>
         </div>
- </section>
+    </section>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -41,20 +65,33 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/kamellia" target="_blank">Connect with me</a></p>
         <p>Schedule a meeting:</p>
         <a href="https://calendly.com/YOUR-CALENDLY-USERNAME" target="_blank">
-            <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                Book a Meeting
-            </button>
-             </a>
+            <button class="button">Book a Meeting</button>
+        </a>
         <p>Download my Resume:</p>
         <a href="resume.pdf" download>
-            <button style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                Download Resume
-            </button>
+            <button class="button">Download Resume</button>
         </a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Kamellia Hyacinth. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const themeToggle = document.getElementById("themeToggle");
+        function setTheme(theme) {
+            document.documentElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+            themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+        }
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = localStorage.getItem("theme") || "light";
+            setTheme(currentTheme === "dark" ? "light" : "dark");
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            setTheme(savedTheme);
+        });
+    </script>
 </body>
 </html>
