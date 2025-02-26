@@ -7,6 +7,7 @@
     <title>Kamellia Hyacinth</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -24,29 +25,32 @@
         </nav>
     </header>
 
-    <section id="profile">
-        <img src="images/your-photo.jpg" alt="Kamellia Hyacinth" class="profile-pic">
-        <h2>Kamellia Hyacinth</h2>
-        <p><strong>M.Sc. Candidate in Healthcare Administration</strong></p>
-        <p>University of Wisconsin La Crosse</p>
-        <p><a href="https://www.uwlax.edu/faculty-senate/committees/faculty-committees/policy/#tm-25265" target="_blank">Graduate Student Council Member</a></p>
-        <p><strong>Military Service:</strong> U.S. Army | 2021 – 2024 | Honorable Discharge</p>
-        <div class="social-links">
-            <a href="mailto:kamelliahyacinth@gmail.com" title="Email"><img src="images/email-icon.png" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/kamellia" target="_blank" title="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="https://github.com/Kamelliah" target="_blank" title="GitHub"><img src="images/github-icon.png" alt="GitHub"></a>
-            <a href="Kamellia_Hyacinth_Resume_.pdf" download title="Resume"><img src="images/resume-icon.png" alt="Resume"></a>
-            <a href="https://calendly.com/kamelliahyacinth" target="_blank" title="Schedule a Meeting"><img src="images/calendly-icon.png" alt="Calendly"></a>
+    <section id="profile-container">
+        <div id="profile-left">
+            <img src="images/your-photo.jpg" alt="Kamellia Hyacinth" class="profile-pic">
+            <h2>Kamellia Hyacinth</h2>
+            <p><strong>M.Sc. Candidate in Healthcare Administration</strong></p>
+            <p>University of Wisconsin La Crosse</p>
+            <p><a href="https://www.uwlax.edu/faculty-senate/committees/faculty-committees/policy/#tm-25265" target="_blank">Graduate Student Council Member</a></p>
+            <p><strong>Military Service:</strong> U.S. Army | 2021 – 2024 | Honorable Discharge</p>
+            <div class="social-links">
+                <a href="mailto:kamelliahyacinth@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/kamellia" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Kamelliah" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="Kamellia_Hyacinth_Resume_.pdf" download title="Resume"><i class="fas fa-file-alt"></i></a>
+                <a href="https://calendly.com/kamelliahyacinth" target="_blank" title="Schedule a Meeting"><i class="fas fa-calendar-alt"></i></a>
+            </div>
         </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a dedicated professional with a strong background in both healthcare administration and technology. My journey has been shaped by a passion for problem-solving, efficiency, and leadership, honed through my time in the U.S. Army and my academic pursuits. With a Master’s degree in Healthcare Administration and a Bachelor’s in Information Technology, I bridge the gap between technology and healthcare operations, striving to create streamlined solutions that improve patient care and operational workflows.</p>
-        <p>Beyond my career, I value continuous learning, adaptability, and resilience—qualities ingrained in me through my military service. I take pride in being resourceful, strategic, and always ready to embrace new challenges. Whether it's optimizing healthcare systems, developing tech-driven solutions, or leading initiatives, I am committed to making a meaningful impact.</p>
-        <a href="Kamellia_Hyacinth_Resume_.pdf" download>
-            <button class="button">Download My Resume</button>
-        </a>
+        <div id="profile-right">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a dedicated professional with a strong background in both healthcare administration and technology. My journey has been shaped by a passion for problem-solving, efficiency, and leadership, honed through my time in the U.S. Army and my academic pursuits. With a Master’s degree in Healthcare Administration and a Bachelor’s in Information Technology, I bridge the gap between technology and healthcare operations, striving to create streamlined solutions that improve patient care and operational workflows.</p>
+                <p>Beyond my career, I value continuous learning, adaptability, and resilience—qualities ingrained in me through my military service. I take pride in being resourceful, strategic, and always ready to embrace new challenges. Whether it's optimizing healthcare systems, developing tech-driven solutions, or leading initiatives, I am committed to making a meaningful impact.</p>
+                <a href="Kamellia_Hyacinth_Resume_.pdf" download>
+                    <button class="button">Download My Resume</button>
+                </a>
+            </section>
+        </div>
     </section>
 
     <section id="education">
@@ -101,6 +105,8 @@
     <footer>
         <p>&copy; 2025 Kamellia Hyacinth. All Rights Reserved.</p>
     </footer>
+</body>
+</html>
 
     <script>
         function setThemeBasedOnTime() {
