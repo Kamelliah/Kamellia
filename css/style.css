@@ -16,6 +16,9 @@
     --dropdown-dark: #003366; /* Darker blue for dropdown in dark mode */
 }
 
+/* Import Fenty Beauty Font */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
 /* Light Theme */
 body {
     font-family: 'Lato', sans-serif;
@@ -53,7 +56,7 @@ body {
 /* Headings */
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 /* Navigation */
@@ -82,6 +85,15 @@ nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 18px;
+}
+
+/* Move Name Closer to Home & Apply Fenty Beauty Font */
+nav h1 {
+    margin-left: 10px; /* Moves closer to Home */
+    font-size: 30px;
+    font-family: 'Baskervville', serif; /* Fenty Beauty-like font */
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* Profile and About Me Alignment */
@@ -116,7 +128,7 @@ nav ul li a {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Increased spacing for better alignment */
+    gap: 10px;
     margin-top: 10px;
 }
 
@@ -124,9 +136,9 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Increased size to match Jason’s */
+    width: 40px;
     height: 40px;
-    font-size: 22px; /* Increased icon size */
+    font-size: 22px;
     margin: 0;
     background-color: transparent;
     border-radius: 50%;
@@ -140,14 +152,14 @@ nav ul li a {
     justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 0; /* Increased spacing */
+    padding: 40px 0;
     align-items: flex-start;
 }
 
 #interests, #education {
     flex: 1;
     text-align: left;
-    padding: 0 20px; /* Added more space between sections */
+    padding: 0 20px;
 }
 
 /* Theme Dropdown Colors */
@@ -186,6 +198,5 @@ footer {
     text-decoration: none;
     color: var(--button-bg);
 }
-
 
 
