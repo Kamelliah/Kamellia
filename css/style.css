@@ -1,7 +1,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #161b22; /* dark background */
+    --dark-bg: #161b22; /* Dark background */
     --light-bg: #ffffff; /* White background for light mode */
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -16,6 +16,7 @@
 /* Light Theme */
 body {
     font-family: 'Arial', sans-serif;
+    font-weight: 300; /* Matches Jason’s font */
     background-color: var(--light-bg);
     color: var(--text-dark);
     margin: 0;
@@ -32,8 +33,8 @@ body {
 
 /* Profile Picture */
 .profile-pic {
-    width: 250px; /* Adjust width */
-    height: 250px; /* Adjust height */
+    width: 250px; /* Matches Jason’s size */
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
@@ -41,18 +42,8 @@ body {
 }
 
 /* Headings */
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 20px;
+h1, h2, h3 {
+    font-weight: 300; /* Matches the light look */
 }
 
 /* Navigation */
@@ -80,7 +71,6 @@ nav ul li {
 nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
-    font-weight: bold;
     font-size: 18px;
 }
 
@@ -104,7 +94,7 @@ nav ul li a {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 2px; /* Reduce space between icons */
+    gap: 8px; /* Closer spacing */
     margin-top: 10px;
 }
 
@@ -112,14 +102,19 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Adjust size */
-    height: 50px;
-    font-size: 25px; /* Adjust icon size */
-    margin: 2px; /* Reduce margin */
+    width: 40px; /* Matches Jason’s size */
+    height: 40px;
+    font-size: 22px; /* Smaller icons like Jason */
+    margin: 0; /* Remove spacing issues */
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
     text-decoration: none;
+}
+
+/* Light Theme: Cobalt Blue Icons */
+[data-theme="light"] .social-links a {
+    color: var(--icon-light);
 }
 
 /* Dark Theme: Light Blue Icons */
@@ -156,7 +151,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Two-Column Layout: Interests & Education */
+/* Interests & Education Two-Column Layout */
 #interests-education {
     display: flex;
     justify-content: space-between;
@@ -165,30 +160,36 @@ nav ul li a {
     padding: 20px 0;
 }
 
-#interests, #education {
+/* Interest List - Prevents Line Breaks */
+#interests {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#interests p {
+    white-space: nowrap; /* Ensures text stays inline */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Education Section - Masters & Year Stay on Same Line */
+#education {
     flex: 1;
     text-align: left;
 }
 
-#interests p {
-    white-space: nowrap; /* Prevents text from breaking into new lines */
-    display: inline-block;
-    margin-right: 15px; /* Adds spacing between items */
-    padding-right: 30px;
-}
-
 #education p {
-    white-space: nowrap; /* Ensures the text stays on one line */
-    display: inline-block; /* Ensures text flows in one line */
-    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px; /* Ensures proper spacing */
+    white-space: nowrap;
 }
 
-#interests p, #education p {
-    margin: 8px 0;
-    font-size: 16px;
-}
-
-/* University Links - Remove Underline */
+/* Remove Underline from University Names */
 .university-link {
     text-decoration: none;
     color: inherit;
@@ -199,12 +200,12 @@ nav ul li a {
     color: var(--button-bg);
 }
 
-/* Profile Section */
+/* Profile Section - Matches Jason */
 #profile-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
+    align-items: center; /* Centers content vertically */
+    padding: 60px 0;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -215,80 +216,12 @@ nav ul li a {
 }
 
 #profile-right {
-    flex: 2;
+    flex: 1.5; /* Gives more space to "About Me" */
     text-align: left;
     padding-left: 40px;
 }
 
-/* Theme Dropdown */
-.theme-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-#themeToggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: var(--secondary-color);
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: var(--primary-color);
-    min-width: 120px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    z-index: 1000;
-}
-
-.dropdown-content a {
-    color: var(--secondary-color);
-    padding: 10px 12px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-
-.dropdown-content a:hover {
-    background-color: var(--button-hover);
-}
-
-/* Show Dropdown When Hovering */
-.theme-dropdown:hover .dropdown-content,
-.theme-dropdown:focus-within .dropdown-content {
-    display: block;
-}
-
-/* Dark Mode Styling */
-[data-theme="dark"] body {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-}
-
-[data-theme="dark"] nav {
-    background-color: var(--dark-bg);
-}
-
-[data-theme="dark"] .resume-link a,
-[data-theme="dark"] .dropdown-content a {
-    color: var(--secondary-color);
-}
-
-[data-theme="dark"] #searchBar {
-    background-color: #333;
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-}
-
-[data-theme="dark"] #searchBar::placeholder {
-    color: #aaa;
-}
-
-/* Footer Section */
+/* Footer - Matches Background Color in Dark & Light Mode */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -299,13 +232,12 @@ footer {
     margin-top: 40px;
 }
 
-/* Dark Mode: Change Footer Background */
 [data-theme="dark"] footer {
     background-color: var(--dark-bg);
     color: var(--text-light);
 }
 
-/* Dark Mode: Change Social Icon Hover */
+/* Dark Mode: Social Icon Hover */
 [data-theme="dark"] .social-links a:hover {
     color: var(--button-bg);
 }
