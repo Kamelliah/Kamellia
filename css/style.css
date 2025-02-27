@@ -45,12 +45,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
 /* Search Bar */
 #searchBar {
     padding: 8px 12px;
@@ -173,6 +167,4 @@ nav ul li a {
 .theme-dropdown:hover .dropdown-content {
     display: block;
 }
-
-
 
