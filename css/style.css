@@ -104,7 +104,7 @@ nav ul li a {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduce space between icons */
+    gap: 5px; /* Reduce space between icons */
     margin-top: 10px;
 }
 
@@ -112,8 +112,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px; /* Match Jason’s size */
-    height: 45px;
+    width: 60px; /* Match Jason’s size */
+    height: 60px;
     font-size: 24px;
     background-color: transparent;
     border-radius: 50%;
