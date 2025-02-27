@@ -159,14 +159,18 @@ nav ul li a {
 .resume-link a:hover {
     text-decoration: underline;
 }
+#interests-education {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    column-gap: 50px; /* Space between columns */
+}
 
-#interests p {
-    white-space: nowrap;
-    display: inline-block;
-    margin-right: 5px; /* Less space between bullets */
-    padding-right: 5px;
-    line-height: 1.1; /* Reduce line spacing */
-    font-size: 16px;
+/* Adjust left padding for Education to ensure better alignment */
+#education {
+    padding-left: 20px;
 }
 #interests p {
     white-space: nowrap;
