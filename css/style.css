@@ -125,46 +125,49 @@ nav ul li a {
     padding-left: 40px;
 }
 
-/* Theme Toggle Dropdown */
+/* Theme Dropdown Container */
 .theme-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.theme-dropdown button {
+/* The Theme Toggle Button */
+#themeToggle {
     background: none;
     border: none;
-    color: var(--secondary-color);
-    font-size: 16px;
     cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary-color);
 }
 
-.theme-dropdown .dropdown-content {
+/* Dropdown Menu (Initially Hidden) */
+.dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: var(--primary-color);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    border-radius: 5px;
     min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
 }
 
-.theme-dropdown .dropdown-content button {
-    background: none;
-    border: none;
+/* Style for Each Theme Option */
+.dropdown-content a {
     color: var(--secondary-color);
-    padding: 8px 10px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
 }
 
-.theme-dropdown .dropdown-content button:hover {
+/* Hover Effect */
+.dropdown-content a:hover {
     background-color: var(--button-hover);
 }
 
-.theme-dropdown:hover .dropdown-content {
+/* Show Dropdown When Hovering or Clicking */
+.theme-dropdown:hover .dropdown-content,
+.theme-dropdown:focus-within .dropdown-content {
     display: block;
 }
-
