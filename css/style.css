@@ -1,7 +1,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #1e1e1e;
+    --dark-bg: #121212;
     --light-bg: #f8f9fa;
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -9,15 +9,38 @@
     --button-hover: #0056b3;
 }
 
+/* Base Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Matches Jason’s typography */
+    line-height: 1.6;
 }
 
-/* Navigation */
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Profile Name */
+h2, #profile-left h2 {
+    font-size: 26px;
+}
+
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,6 +66,14 @@ nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+}
+
+/* Right Section: Search & Theme Toggle */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Search Bar */
@@ -77,7 +108,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Two-Column Layout: Interests & Education */
+/* Interests & Education Section (Two Columns) */
 #interests-education {
     display: flex;
     justify-content: space-between;
@@ -92,7 +123,7 @@ nav ul li a {
 }
 
 #interests {
-    padding-right: 30px; /* Increased spacing for better separation */
+    padding-right: 30px;
 }
 
 #education {
@@ -102,6 +133,7 @@ nav ul li a {
 /* Remove extra spacing for cleaner look */
 #interests p, #education p {
     margin: 8px 0;
+    font-size: 16px;
 }
 
 /* Profile Section */
@@ -124,13 +156,13 @@ nav ul li a {
     text-align: left;
     padding-left: 40px;
 }
-/* Theme Dropdown Container */
+
+/* Theme Dropdown */
 .theme-dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* The Theme Toggle Button */
 #themeToggle {
     background: none;
     border: none;
@@ -139,7 +171,6 @@ nav ul li a {
     color: var(--secondary-color);
 }
 
-/* Dropdown Menu (Initially Hidden) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -151,7 +182,6 @@ nav ul li a {
     z-index: 1000;
 }
 
-/* Style for Each Theme Option */
 .dropdown-content a {
     color: var(--secondary-color);
     padding: 10px 12px;
@@ -160,13 +190,38 @@ nav ul li a {
     font-size: 14px;
 }
 
-/* Hover Effect */
 .dropdown-content a:hover {
     background-color: var(--button-hover);
 }
 
-/* Show Dropdown When Hovering or Clicking */
+/* Show Dropdown When Hovering */
 .theme-dropdown:hover .dropdown-content,
 .theme-dropdown:focus-within .dropdown-content {
     display: block;
 }
+
+/* Dark Mode Styling */
+[data-theme="dark"] body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] nav {
+    background-color: var(--dark-bg);
+}
+
+[data-theme="dark"] .resume-link a,
+[data-theme="dark"] .dropdown-content a {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] #searchBar {
+    background-color: #333;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+[data-theme="dark"] #searchBar::placeholder {
+    color: #aaa;
+}
+
