@@ -1,37 +1,27 @@
-/* Root Variables */
 :root {
-    --primary-color: #272a36; /* Jason's exact primary color */
-    --secondary-color: #bbdefb; /* Jason's text color */
-    --dark-bg: #22252f; /* Jason's Dark Theme Background */
-    --light-bg: #bbdefb; /* Jason's Light Theme Background */
-    --text-dark: #1664c0; /* Jason's Dark Text Color */
+    --primary-color: #002244;
+    --secondary-color: #ffffff;
+    --dark-bg: #161b22; /* Dark background */
+    --light-bg: #ffffff; /* White background for light mode */
+    --text-dark: #212529;
     --text-light: #ffffff;
-    --button-bg: #1664c0;
+    --button-bg: #007bff;
     --button-hover: #0056b3;
-    
-    /* Social Icon Colors */
-    --icon-light: #1664c0;
-    --icon-dark: #bbdefb;
-    --dropdown-light: #f0f0f0;
-    --dropdown-dark: #22252f;
-}
 
-/* Import Custom Font for Kamellia Hyacinth */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    /* Social Icon Colors */
+    --icon-light: #0047AB; /* Cobalt Blue in Light Mode */
+    --icon-dark: #b0c7f1; /* Light Blue in Dark Mode */
+}
 
 /* Light Theme */
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 /* Dark Theme */
@@ -40,106 +30,81 @@ body {
     color: var(--text-light);
 }
 
-/* Name Styling - Updated Font */
-nav h1 {
-    margin-left: 20px;
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--secondary-color);
-}
-
-/* Profile Layout */
-#profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    text-align: left;
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* Profile Left Section (Image and Socials) */
-#profile-left {
-    flex: 1;
-    text-align: center;
-}
-
-/* About Me Section Alignment */
-#profile-right {
-    flex: 2;
-    padding-left: 40px;
-}
-
-/* About Me Title Styling */
-#profile-right h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-/* Profile Picture - Circular Without Background */
+/* Profile Picture */
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
-    background: none;
+    box-shadow: none;
 }
 
-/* Theme Dropdown */
-.theme-dropdown {
-    position: relative;
-    display: inline-block;
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.theme-dropdown button {
-    background: none;
-    border: none;
-    cursor: pointer;
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
     font-size: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
-.theme-dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: var(--dropdown-light);
-    min-width: 120px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-.theme-dropdown .dropdown-content a {
-    color: var(--text-dark);
-    padding: 10px 15px;
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
     text-decoration: none;
-    display: block;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.theme-dropdown .dropdown-content a:hover {
-    background-color: var(--button-bg);
-    color: var(--text-light);
+/* Right Section: Search & Theme Toggle */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.theme-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-[data-theme="dark"] .theme-dropdown .dropdown-content {
-    background-color: var(--dropdown-dark);
-    color: var(--text-light);
+/* Search Bar */
+#searchBar {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 180px;
+    outline: none;
 }
 
 /* Social Icon Styling */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 10px; /* Reduce space between icons */
     margin-top: 10px;
 }
 
@@ -147,67 +112,81 @@ nav h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    margin: 0;
+    width: 45px; /* Match Jason’s size */
+    height: 45px;
+    font-size: 24px;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
     text-decoration: none;
 }
 
-/* Interests & Education Layout - Matches Jason's */
+/* Light Theme: Cobalt Blue Icons */
+[data-theme="light"] .social-links a {
+    color: var(--icon-light);
+}
+
+/* Dark Theme: Light Blue Icons */
+[data-theme="dark"] .social-links a {
+    color: var(--icon-dark);
+}
+
+/* Hover Effect */
+.social-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Resume Link */
+.resume-link {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume-link i {
+    color: var(--button-bg);
+}
+
+.resume-link a {
+    color: var(--button-bg);
+    text-decoration: none;
+}
+
+.resume-link a:hover {
+    text-decoration: underline;
+}
+
+/* Two-Column Layout: Interests & Education */
 #interests-education {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 0;
-    align-items: flex-start;
+    padding: 20px 0;
 }
 
 #interests, #education {
     flex: 1;
     text-align: left;
-    padding: 0 20px;
 }
 
-#interests ul, #education ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#interests ul li::before {
-    content: "■";
-    color: var(--button-bg);
-    display: inline-block;
-    width: 1em;
-}
-
-#education p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Keep Interests in One Line */
+#interests p {
     white-space: nowrap;
-    margin-bottom: 5px;
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 30px;
 }
 
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: auto;
-    padding-bottom: 10px;
-}
-
-[data-theme="dark"] footer {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
+/* Keep Education on One Line */
+#education p {
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 30px;
 }
 
 /* Remove Underline from University Links */
@@ -221,5 +200,113 @@ footer {
     color: var(--button-bg);
 }
 
+/* Profile Section */
+#profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
+#profile-left {
+    flex: 1;
+    text-align: center;
+}
 
+#profile-right {
+    flex: 2;
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Theme Dropdown */
+.theme-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: var(--secondary-color);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--button-hover);
+}
+
+/* Show Dropdown When Hovering */
+.theme-dropdown:hover .dropdown-content,
+.theme-dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+/* Dark Mode Styling */
+[data-theme="dark"] body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] nav {
+    background-color: var(--dark-bg);
+}
+
+[data-theme="dark"] .resume-link a,
+[data-theme="dark"] .dropdown-content a {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] #searchBar {
+    background-color: #333;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+[data-theme="dark"] #searchBar::placeholder {
+    color: #aaa;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Dark Mode: Change Footer Background */
+[data-theme="dark"] footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+/* Dark Mode: Change Social Icon Hover */
+[data-theme="dark"] .social-links a:hover {
+    color: var(--button-bg);
+}
