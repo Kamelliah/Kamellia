@@ -160,13 +160,13 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Two-Column Layout: Interests & Education */
-#interests-education {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
+#interests p {
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 5px; /* Less space between bullets */
+    padding-right: 5px;
+    line-height: 1.1; /* Reduce line spacing */
+    font-size: 16px;
 }
 #interests p {
     white-space: nowrap;
