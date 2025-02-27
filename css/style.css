@@ -42,17 +42,28 @@ body {
 
 /* Name Styling - Updated Font */
 nav h1 {
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: 'Great Vibes', cursive;
+    margin-left: 20px;
+    font-size: 32px;
     font-weight: 700;
-    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+/* Profile Layout */
+#profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Profile Picture - Circular Without Background */
 .profile-pic {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
@@ -109,8 +120,8 @@ nav h1 {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    margin-top: 5px;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 .social-links a {
@@ -127,7 +138,7 @@ nav h1 {
     text-decoration: none;
 }
 
-/* Interests & Education Two-Column Layout */
+/* Interests & Education Layout - Matches Jason's */
 #interests-education {
     display: flex;
     justify-content: space-between;
@@ -143,16 +154,9 @@ nav h1 {
     padding: 0 20px;
 }
 
-#interests ul {
+#interests ul, #education ul {
     list-style-type: none;
     padding: 0;
-}
-
-#interests ul li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
 }
 
 #interests ul li::before {
@@ -168,11 +172,6 @@ nav h1 {
     align-items: center;
     white-space: nowrap;
     margin-bottom: 5px;
-}
-
-/* Reduce gap between MS-HCA Student and University Name */
-#profile-left p {
-    margin: 2px 0;
 }
 
 /* Footer */
