@@ -115,7 +115,7 @@ nav ul li a {
 
 /* Dark Theme: Keep Icons White */
 [data-theme="dark"] .social-links a {
-    color: #ffffff !important;
+    color: #6699CC !important;
 }
 
 /* Hover Effect */
