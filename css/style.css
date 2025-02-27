@@ -241,7 +241,16 @@ nav ul li a {
 [data-theme="dark"] .social-links a {
     color: var(--text-light);
 }
-
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center; /* Centers the text */
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+}
 [data-theme="dark"] .social-links a:hover {
     color: var(--button-bg);
 }
