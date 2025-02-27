@@ -166,6 +166,13 @@ nav h1 {
     padding: 0 20px;
 }
 
+#interests p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ensures proper spacing between icons and text */
+    margin: 5px 0; /* Reduce vertical spacing */
+}
+
 #education p {
     display: flex;
     justify-content: space-between;
@@ -206,5 +213,6 @@ footer {
     text-decoration: none;
     color: var(--button-bg);
 }
+
 
 
