@@ -104,23 +104,22 @@ nav ul li a {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: nowrap; /* Prevents breaking into new line */
+    gap: 10px; /* Reduce space between icons */
+    margin-top: 10px;
 }
 
 .social-links a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 40px; /* Adjust size */
+    height: 40px;
+    font-size: 20px; /* Adjust icon size */
+    margin: 5px; /* Reduce margin */
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
-    color: var(--icon-light); /* Default Cobalt Blue */
     text-decoration: none;
-    font-size: 24px;
 }
 
 /* Dark Theme: Light Blue Icons */
