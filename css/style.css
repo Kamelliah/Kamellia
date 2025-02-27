@@ -118,7 +118,7 @@ nav ul li a {
     justify-content: center;
     width: 40px; /* Match Jason’s size */
     height: 40px;
-    font-size: 35px;
+    font-size: 32px;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
@@ -321,7 +321,11 @@ footer {
     background-color: var(--light-banner-bg);
     color: var(--light-banner-text);
 }
-
+/* Dark Mode: Remove Blue Background, Match Body */
+[data-theme="dark"] footer {
+    background-color: var(--dark-bg); /* Same as body */
+    color: var(--text-light);
+}
 /* Ensure Links Adjust in Light Mode */
 [data-theme="light"] nav ul li a {
     color: var(--light-banner-text);
