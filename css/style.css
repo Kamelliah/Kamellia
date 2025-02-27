@@ -41,6 +41,30 @@ nav h1 {
     font-size: 24px;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--button-bg);
+}
+
 #profile-container {
     display: flex;
     justify-content: center;
@@ -222,5 +246,4 @@ footer {
         background-color: var(--primary-color);
     }
 }
-
 
