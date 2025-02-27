@@ -170,11 +170,15 @@ nav ul li a {
     text-align: left;
 }
 
-#interests {
+#interests p {
+    white-space: nowrap; /* Prevents text from breaking into new lines */
+    display: inline-block;
+    margin-right: 15px; /* Adds spacing between items */
     padding-right: 30px;
 }
 
-#education {
+#education p {
+    white-space: nowrap; /* Ensures the text stays on one line */
     padding-left: 30px;
 }
 
