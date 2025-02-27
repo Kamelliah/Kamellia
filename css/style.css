@@ -2,7 +2,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #002244; /* Updated dark mode to match header color */
+    --dark-bg: #001533; /* Adjusted to a deeper blue for dark mode */
     --light-bg: #ffffff;
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -12,6 +12,8 @@
     /* Social Icon Colors */
     --icon-light: #0047AB; /* Cobalt Blue in Light Mode */
     --icon-dark: #b0c7f1; /* Light Blue in Dark Mode */
+    --dropdown-light: #f0f0f0;
+    --dropdown-dark: #003366; /* Darker blue for dropdown in dark mode */
 }
 
 /* Light Theme */
@@ -44,6 +46,8 @@ body {
     border: none;
     box-shadow: none;
     align-self: center;
+    position: relative;
+    top: 0;
 }
 
 /* Headings */
@@ -99,6 +103,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: flex-start;
 }
 
 #profile-right {
@@ -111,8 +116,22 @@ nav ul li a {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 10px; /* Increased spacing for better alignment */
     margin-top: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Increased size to match Jason’s */
+    height: 40px;
+    font-size: 22px; /* Increased icon size */
+    margin: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 /* Interests & Education Two-Column Layout */
@@ -121,13 +140,23 @@ nav ul li a {
     justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 40px 0; /* Increased spacing */
     align-items: flex-start;
 }
 
 #interests, #education {
     flex: 1;
     text-align: left;
+    padding: 0 20px; /* Added more space between sections */
+}
+
+/* Theme Dropdown Colors */
+.theme-dropdown .dropdown-content {
+    background-color: var(--dropdown-light);
+}
+
+[data-theme="dark"] .theme-dropdown .dropdown-content {
+    background-color: var(--dropdown-dark);
 }
 
 /* Footer */
@@ -157,5 +186,6 @@ footer {
     text-decoration: none;
     color: var(--button-bg);
 }
+
 
 
