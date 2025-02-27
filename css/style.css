@@ -31,6 +31,12 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
@@ -39,28 +45,32 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Right Section: Search & Theme Toggle */
 .nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* Search Bar */
 #searchBar {
     padding: 8px 12px;
     border-radius: 20px;
     border: 1px solid #ccc;
     width: 180px;
+    outline: none;
 }
 
+/* Resume Link */
 .resume-link {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .resume-link i {
-    margin-right: 5px;
     color: var(--button-bg);
 }
 
@@ -73,6 +83,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
+/* Two-Column Layout: Interests & Education */
 #interests-education {
     display: flex;
     justify-content: space-between;
@@ -87,18 +98,19 @@ nav ul li a {
 }
 
 #interests {
-    padding-right: 20px; /* Adds spacing between interests and education */
+    padding-right: 30px; /* Increased spacing for better separation */
 }
 
 #education {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
+/* Remove extra spacing for cleaner look */
 #interests p, #education p {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
-/* Profile Layout */
+/* Profile Section */
 #profile-container {
     display: flex;
     justify-content: center;
@@ -118,4 +130,48 @@ nav ul li a {
     text-align: left;
     padding-left: 40px;
 }
+
+/* Theme Toggle Dropdown */
+.theme-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.theme-dropdown button {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.theme-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+.theme-dropdown .dropdown-content button {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    padding: 8px 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.theme-dropdown .dropdown-content button:hover {
+    background-color: var(--button-hover);
+}
+
+.theme-dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
