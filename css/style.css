@@ -1,7 +1,7 @@
 /* style.css */
 
 :root {
-    --primary-color: #007bff;
+    --primary-color: #002244;
     --secondary-color: #ffffff;
     --dark-bg: #1e1e1e;
     --light-bg: #f8f9fa;
@@ -41,24 +41,6 @@ nav h1 {
     font-size: 24px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 nav input {
     padding: 8px;
     border: none;
@@ -73,19 +55,24 @@ nav button {
     color: var(--secondary-color);
 }
 
-.profile-container {
+#profile-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
     padding: 40px;
+}
+
+#profile-left {
+    text-align: left;
+    max-width: 300px;
+    margin-right: 40px;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,8 +84,8 @@ h2 {
 
 .social-links {
     display: flex;
-    gap: 10px;
-    margin-top: 15px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .social-links a {
@@ -107,16 +94,14 @@ h2 {
     justify-content: center;
     width: 50px;
     height: 50px;
+    margin: 10px;
     background-color: var(--button-bg);
     border-radius: 50%;
     transition: 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.social-links a img {
-    width: 24px;
-    height: 24px;
-    filter: invert(1);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .social-links a:hover {
@@ -148,35 +133,6 @@ h2 {
     background: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio, #media {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
-    background-color: var(--light-bg);
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio h2, #media h2 {
-    text-align: center;
-    color: var(--primary-color);
-}
-
-.portfolio-item, .media-item {
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    margin: 15px 0;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item a, .media-item a {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--primary-color);
-    font-weight: bold;
 }
 
 footer {
