@@ -49,6 +49,16 @@ nav h1 {
     letter-spacing: 1px;
 }
 
+/* Profile Picture - Circular Without Background */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    background: none;
+}
+
 /* Theme Dropdown */
 .theme-dropdown {
     position: relative;
@@ -138,12 +148,18 @@ nav h1 {
     padding: 0;
 }
 
+#interests ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
 #interests ul li::before {
     content: "■"; /* Matches Jason's bullet points */
     color: var(--button-bg);
     display: inline-block;
     width: 1em;
-    margin-right: 10px;
 }
 
 #education p {
