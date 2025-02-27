@@ -128,7 +128,7 @@ nav h1 {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px; /* Reduced spacing between icons */
     margin-top: 10px;
 }
 
@@ -136,9 +136,9 @@ nav h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
+    width: 45px; /* Increased size to match Jason’s */
+    height: 45px;
+    font-size: 24px; /* Increased icon size */
     margin: 0;
     background-color: transparent;
     border-radius: 50%;
@@ -198,5 +198,4 @@ footer {
     text-decoration: none;
     color: var(--button-bg);
 }
-
 
