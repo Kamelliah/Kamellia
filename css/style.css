@@ -177,10 +177,11 @@ nav ul li a {
     display: inline-block;
     margin-right: 5px; /* Less space between bullets */
     padding-right: 5px;
+    margin-bottom: 2px; /* Reduce space between each interest */
+    padding-bottom: 0; /* Remove extra padding */
     line-height: 1.1; /* Reduce line spacing */
     font-size: 16px;
 }
-
 /* Keep Education on One Line */
 #education p {
     white-space: nowrap;
