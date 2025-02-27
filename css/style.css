@@ -1,7 +1,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #1e1e1e; /*  dark background */
+    --dark-bg: #161b22; /* dark background */
     --light-bg: #ffffff; /* White background for light mode */
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -13,7 +13,7 @@
     --icon-dark: #b0c7f1; /* Light Blue in Dark Mode */
 }
 
-/* Theme-Based Backgrounds */
+/* Light Theme */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
 }
 
+/* Dark Theme */
 [data-theme="dark"] {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -99,38 +100,32 @@ nav ul li a {
     outline: none;
 }
 
-/* Social Links - Keep Icons Inline */
+/* Social Icon Styling */
 .social-links {
     display: flex;
-    justify-content: center; /* Centers icons horizontally */
-    align-items: center;
-    flex-wrap: nowrap; /* Prevents line break */
+    justify-content: center;
     gap: 15px;
-    margin-top: 10px;
+    flex-wrap: nowrap; /* Prevents breaking into new line */
 }
 
-/* Social Icon Sizing */
 .social-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
+    color: var(--icon-light); /* Default Cobalt Blue */
     text-decoration: none;
     font-size: 24px;
 }
 
-/* Light Theme: Cobalt Blue Icons */
-[data-theme="light"] .social-links a {
-    color: var(--icon-light) !important;
-}
-
 /* Dark Theme: Light Blue Icons */
 [data-theme="dark"] .social-links a {
-    color: var(--icon-dark) !important;
+    color: var(--icon-dark);
 }
 
 /* Hover Effect */
@@ -187,6 +182,17 @@ nav ul li a {
 #interests p, #education p {
     margin: 8px 0;
     font-size: 16px;
+}
+
+/* University Links - Remove Underline */
+.university-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.university-link:hover {
+    text-decoration: none;
+    color: var(--button-bg);
 }
 
 /* Profile Section */
@@ -278,33 +284,24 @@ nav ul li a {
     color: #aaa;
 }
 
-/* Footer Styling */
+/* Footer Section */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    text-align: center; /* Centers text */
+    text-align: center;
     padding: 15px;
     font-size: 16px;
     font-weight: bold;
     margin-top: 40px;
 }
 
-/* Change Footer Background in Dark Mode */
+/* Dark Mode: Change Footer Background */
 [data-theme="dark"] footer {
     background-color: var(--dark-bg);
     color: var(--text-light);
 }
 
-/* Change Footer Background in Light Mode */
-[data-theme="light"] footer {
-    background-color: var(--light-bg);
-    color: var(--text-dark);
-}
-
-/* Dark Mode Social Icons Hover */
+/* Dark Mode: Change Social Icon Hover */
 [data-theme="dark"] .social-links a:hover {
     color: var(--button-bg);
 }
-
-
-
