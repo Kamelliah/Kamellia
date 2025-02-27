@@ -1,16 +1,20 @@
 :root {
-    --primary-color: #002244;
+    --primary-color: #002244; /* Default Dark Blue */
     --secondary-color: #ffffff;
-    --dark-bg: #161b22; /* Dark background */
-    --light-bg: #ffffff; /* White background for light mode */
+    --dark-bg: #161b22;
+    --light-bg: #ffffff;
     --text-dark: #212529;
     --text-light: #ffffff;
     --button-bg: #007bff;
     --button-hover: #0056b3;
 
     /* Social Icon Colors */
-    --icon-light: #0047AB; /* Cobalt Blue in Light Mode */
-    --icon-dark: #b0c7f1; /* Light Blue in Dark Mode */
+    --icon-light: #0047AB;
+    --icon-dark: #b0c7f1;
+
+    /* Light Theme Banner Colors */
+    --light-banner-bg: #ffffff;  /* White for Light Mode */
+    --light-banner-text: #000000; /* Black Text for Light Mode */
 }
 
 /* Light Theme */
