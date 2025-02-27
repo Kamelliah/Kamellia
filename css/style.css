@@ -1,46 +1,45 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #181a1b; /* Jason’s dark background */
+    --dark-bg: #1e1e1e; /*  dark background */
     --light-bg: #ffffff; /* White background for light mode */
     --text-dark: #212529;
     --text-light: #ffffff;
     --button-bg: #007bff;
     --button-hover: #0056b3;
     
-    /* 🔹 Social Icon Colors */
+    /* Social Icon Colors */
     --icon-light: #0047AB; /* Cobalt Blue in Light Mode */
-    --icon-dark: #6699CC; /* Light Blue in Dark Mode */
+    --icon-dark: #b0c7f1; /* Light Blue in Dark Mode */
 }
 
-/* Light Mode */
+/* Theme-Based Backgrounds */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 16px; 
     line-height: 1.6;
 }
 
-/* Dark Mode */
 [data-theme="dark"] {
     background-color: var(--dark-bg);
     color: var(--text-light);
 }
 
-/* 🔹 Profile Picture Styling */
+/* Profile Picture */
 .profile-pic {
-    width: 280px; /* Matches Jason’s Size */
-    height: 280px;
+    width: 250px; /* Adjust width */
+    height: 250px; /* Adjust height */
     border-radius: 50%;
     object-fit: cover;
-    border: none; /* Removes border */
-    box-shadow: none; /* Removes unwanted shadows */
+    border: none;
+    box-shadow: none;
 }
 
-/* 🔹 Headings */
+/* Headings */
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -55,7 +54,7 @@ h3 {
     font-size: 20px;
 }
 
-/* 🔹 Navigation */
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -84,14 +83,14 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* 🔹 Right Section: Search & Theme Toggle */
+/* Right Section: Search & Theme Toggle */
 .nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* 🔹 Search Bar */
+/* Search Bar */
 #searchBar {
     padding: 8px 12px;
     border-radius: 20px;
@@ -100,28 +99,36 @@ nav ul li a {
     outline: none;
 }
 
-/* 🔹 Social Media Icons */
+/* Social Links - Keep Icons Inline */
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevents line break */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Social Icon Sizing */
 .social-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 45px;
+    height: 45px;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    font-size: 26px; /* Increased for better visibility */
+    font-size: 24px;
 }
 
-/* 🔹 Light Mode: Cobalt Blue Icons */
+/* Light Theme: Cobalt Blue Icons */
 [data-theme="light"] .social-links a {
     color: var(--icon-light) !important;
 }
 
-/* 🔹 Dark Mode: Light Blue Icons */
+/* Dark Theme: Light Blue Icons */
 [data-theme="dark"] .social-links a {
     color: var(--icon-dark) !important;
 }
@@ -132,7 +139,7 @@ nav ul li a {
     opacity: 0.8;
 }
 
-/* 🔹 Resume Link */
+/* Resume Link */
 .resume-link {
     margin-top: 15px;
     font-size: 18px;
@@ -155,7 +162,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* 🔹 Two-Column Layout: Interests & Education */
+/* Two-Column Layout: Interests & Education */
 #interests-education {
     display: flex;
     justify-content: space-between;
@@ -182,7 +189,7 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* 🔹 Profile Section */
+/* Profile Section */
 #profile-container {
     display: flex;
     justify-content: center;
@@ -203,7 +210,7 @@ nav ul li a {
     padding-left: 40px;
 }
 
-/* 🔹 Theme Dropdown */
+/* Theme Dropdown */
 .theme-dropdown {
     position: relative;
     display: inline-block;
@@ -240,13 +247,13 @@ nav ul li a {
     background-color: var(--button-hover);
 }
 
-/* 🔹 Show Dropdown When Hovering */
+/* Show Dropdown When Hovering */
 .theme-dropdown:hover .dropdown-content,
 .theme-dropdown:focus-within .dropdown-content {
     display: block;
 }
 
-/* 🔹 Dark Mode Styling */
+/* Dark Mode Styling */
 [data-theme="dark"] body {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -271,20 +278,33 @@ nav ul li a {
     color: #aaa;
 }
 
-/* 🔹 Footer */
+/* Footer Styling */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    text-align: center;
+    text-align: center; /* Centers text */
     padding: 15px;
     font-size: 16px;
     font-weight: bold;
     margin-top: 40px;
 }
 
-/* 🔹 Dark Mode Social Icons */
+/* Change Footer Background in Dark Mode */
+[data-theme="dark"] footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+/* Change Footer Background in Light Mode */
+[data-theme="light"] footer {
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+/* Dark Mode Social Icons Hover */
 [data-theme="dark"] .social-links a:hover {
     color: var(--button-bg);
 }
+
 
 
