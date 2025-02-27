@@ -19,8 +19,17 @@
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <input type="text" id="searchBar" placeholder="Search...">
-            <button id="themeToggle">🌙</button>
+            <div class="nav-right">
+                <input type="text" id="searchBar" placeholder="Search...">
+                <div class="theme-dropdown">
+                    <button id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <div class="dropdown-content">
+                        <button onclick="setTheme('light')">Light</button>
+                        <button onclick="setTheme('dark')">Dark</button>
+                        <button onclick="setTheme('auto')">Automatic</button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -34,23 +43,16 @@
                 <a href="mailto:kamelliahyacinth@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/kamellia" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Kamelliah" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.uwlax.edu/faculty-senate/committees/faculty-committees/policy/#tm-25265" target="_blank" title="Graduate Student Council">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
+                <a href="https://www.uwlax.edu/faculty-senate/committees/faculty-committees/policy/#tm-25265" target="_blank" title="Graduate Student Council"><i class="fas fa-graduation-cap"></i></a>
                 <a href="https://calendly.com/kamelliahyacinth" target="_blank" title="Schedule a Meeting"><i class="fas fa-calendar-alt"></i></a>
             </div>
+            <p><i class="fas fa-download"></i> Download my <a href="Kamellia_Hyacinth_Resume_.pdf" download>Resume</a></p>
         </div>
+        
         <div id="profile-right">
             <section id="about">
                 <h2>About Me</h2>
                 <p>I am a dedicated professional with a strong background in both healthcare administration and technology. My journey has been shaped by a passion for problem-solving, efficiency, and leadership, honed through my time in the U.S. Army and my academic pursuits. With a Master’s degree in Healthcare Administration and a Bachelor’s in Information Technology, I bridge the gap between technology and healthcare operations, striving to create streamlined solutions that improve patient care and operational workflows.</p>
-                <p>Beyond my career, I value continuous learning, adaptability, and resilience—qualities ingrained in me through my military service. I take pride in being resourceful, strategic, and always ready to embrace new challenges. Whether it's optimizing healthcare systems, developing tech-driven solutions, or leading initiatives, I am committed to making a meaningful impact.</p>
-                
-                <br>
-                <span>Download my</span>
-                <a href="Kamellia_Hyacinth_Resume_.pdf" download>
-                    <i class="fas fa-file-alt"></i> Resume
-                </a>
             </section>
 
             <section id="services">
@@ -73,32 +75,6 @@
                     </li>
                 </ul>
             </section>
-
-            <section id="memberships">
-                <h2>Professional Memberships</h2>
-                <p>Member, American College of Healthcare Executives</p>
-                <p>Member, Wisconsin Public Health Association</p>
-            </section>
-        </div>
-    </section>
-
-    <section id="news">
-        <h2>News</h2>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kamelliahyacinth@gmail.com">kamelliahyacinth@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/kamellia" target="_blank">Connect with me</a></p>
-            <p><i class="fas fa-calendar-alt"></i> Schedule a meeting:</p>
-            <a href="https://calendly.com/kamelliahyacinth" target="_blank">
-                <button class="button"><i class="fas fa-calendar-alt"></i> Book a Meeting</button>
-            </a>
-            <p><i class="fas fa-download"></i> Download my Resume:</p>
-            <a href="Kamellia_Hyacinth_Resume_.pdf" download>
-                <button class="button"><i class="fas fa-file-alt"></i> Download Resume</button>
-            </a>
         </div>
     </section>
 
@@ -107,38 +83,31 @@
     </footer>
 
     <script>
-        function setThemeBasedOnTime() {
-            const hour = new Date().getHours();
-            if (hour >= 6 && hour < 18) {
-                document.documentElement.setAttribute("data-theme", "light");
-                localStorage.setItem("theme", "light");
-                themeToggle.textContent = "🌙";
-            } else {
-                document.documentElement.setAttribute("data-theme", "dark");
-                localStorage.setItem("theme", "dark");
-                themeToggle.textContent = "☀️";
-            }
-        }
-        
-        const themeToggle = document.getElementById("themeToggle");
-        themeToggle.addEventListener("click", () => {
-            const currentTheme = localStorage.getItem("theme") || "light";
-            const newTheme = currentTheme === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", newTheme);
-            localStorage.setItem("theme", newTheme);
-            themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙";
-        });
-        
-        document.addEventListener("DOMContentLoaded", () => {
-            if (!localStorage.getItem("theme")) {
+        function setTheme(theme) {
+            if (theme === 'auto') {
                 setThemeBasedOnTime();
             } else {
-                document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
+                document.documentElement.setAttribute("data-theme", theme);
+                localStorage.setItem("theme", theme);
+            }
+        }
+
+        function setThemeBasedOnTime() {
+            const hour = new Date().getHours();
+            const theme = (hour >= 6 && hour < 18) ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme");
+            if (!savedTheme || savedTheme === 'auto') {
+                setThemeBasedOnTime();
+            } else {
+                document.documentElement.setAttribute("data-theme", savedTheme);
             }
         });
     </script>
 </body>
 </html>
-
-
 
