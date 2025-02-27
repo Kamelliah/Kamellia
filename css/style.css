@@ -24,6 +24,9 @@ body {
     padding: 0;
     font-size: 16px; 
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Dark Theme */
@@ -34,8 +37,8 @@ body {
 
 /* Profile Picture */
 .profile-pic {
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
@@ -56,6 +59,24 @@ nav {
     padding: 15px 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 18px;
 }
 
 /* Theme Toggle Dropdown */
@@ -102,7 +123,7 @@ nav {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 6px;
     margin-top: 10px;
 }
 
@@ -193,7 +214,7 @@ footer {
     padding: 15px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 0;
+    margin-top: auto;
     padding-bottom: 10px;
 }
 
@@ -202,18 +223,13 @@ footer {
     color: var(--text-light);
 }
 
-/* Remove Extra White Space Below Footer */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/* Remove Underline from University Links */
+.university-link {
+    text-decoration: none;
+    color: inherit;
 }
 
-main {
-    flex: 1;
-}
-
-/* Dark Mode: Social Icon Hover */
-[data-theme="dark"] .social-links a:hover {
+.university-link:hover {
+    text-decoration: none;
     color: var(--button-bg);
 }
