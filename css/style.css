@@ -1,7 +1,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #121212;
+    --dark-bg: #161B22; /* Jason's exact dark mode */
     --light-bg: #f8f9fa;
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -9,14 +9,13 @@
     --button-hover: #0056b3;
 }
 
-/* Base Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
-    font-size: 16px;  
+    font-size: 16px; 
     line-height: 1.6;
 }
 
@@ -35,12 +34,7 @@ h3 {
     font-size: 20px;
 }
 
-/* Profile Name */
-h2, #profile-left h2 {
-    font-size: 26px;
-}
-
-/* Navbar */
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -85,6 +79,25 @@ nav ul li a {
     outline: none;
 }
 
+/* Social Icons - Bigger */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 28px;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--button-hover);
+}
+
 /* Resume Link */
 .resume-link {
     margin-top: 15px;
@@ -108,7 +121,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Interests & Education Section (Two Columns) */
+/* Two-Column Layout: Interests & Education */
 #interests-education {
     display: flex;
     justify-content: space-between;
@@ -130,7 +143,6 @@ nav ul li a {
     padding-left: 30px;
 }
 
-/* Remove extra spacing for cleaner look */
 #interests p, #education p {
     margin: 8px 0;
     font-size: 16px;
@@ -223,5 +235,14 @@ nav ul li a {
 
 [data-theme="dark"] #searchBar::placeholder {
     color: #aaa;
+}
+
+/* Dark Mode Social Icons */
+[data-theme="dark"] .social-links a {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .social-links a:hover {
+    color: var(--button-bg);
 }
 
