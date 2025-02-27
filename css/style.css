@@ -2,7 +2,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #161b22;
+    --dark-bg: #002244; /* Updated dark mode to match header color */
     --light-bg: #ffffff;
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -43,6 +43,7 @@ body {
     object-fit: cover;
     border: none;
     box-shadow: none;
+    align-self: center;
 }
 
 /* Headings */
@@ -79,111 +80,10 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Theme Toggle Dropdown */
-.theme-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.theme-dropdown button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: var(--secondary-color);
-}
-
-.theme-dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: var(--primary-color);
-    min-width: 120px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-}
-
-.theme-dropdown .dropdown-content a {
-    color: var(--secondary-color);
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-}
-
-.theme-dropdown .dropdown-content a:hover {
-    background-color: var(--button-bg);
-}
-
-.theme-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Social Icon Styling */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    margin-top: 10px;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
-    margin: 0;
-    background-color: transparent;
-    border-radius: 50%;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-/* Light Theme Icons */
-[data-theme="light"] .social-links a {
-    color: var(--icon-light);
-}
-
-/* Dark Theme Icons */
-[data-theme="dark"] .social-links a {
-    color: var(--icon-dark);
-}
-
-/* Hover Effect */
-.social-links a:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-/* Resume Link */
-.resume-link {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.resume-link i {
-    color: var(--button-bg);
-}
-
-.resume-link a {
-    color: var(--button-bg);
-    text-decoration: none;
-}
-
-.resume-link a:hover {
-    text-decoration: underline;
-}
-
 /* Profile and About Me Alignment */
 #profile-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     gap: 40px;
@@ -198,12 +98,36 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #profile-right {
     flex: 1.5;
     text-align: left;
     padding-left: 40px;
+}
+
+/* Social Icon Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+/* Interests & Education Two-Column Layout */
+#interests-education {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+
+#interests, #education {
+    flex: 1;
+    text-align: left;
 }
 
 /* Footer */
@@ -233,4 +157,5 @@ footer {
     text-decoration: none;
     color: var(--button-bg);
 }
+
 
