@@ -114,7 +114,7 @@ nav ul li a {
     justify-content: center;
     width: 40px; /* Match Jason’s size */
     height: 40px;
-    font-size: 40px;
+    font-size: 35px;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
@@ -300,13 +300,29 @@ footer {
     margin-top: 40px;
 }
 
-/* Dark Mode: Change Footer Background */
-[data-theme="dark"] footer {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
+/* Default Dark Theme (No Changes Needed) */
+nav {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-/* Dark Mode: Change Social Icon Hover */
-[data-theme="dark"] .social-links a:hover {
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Light Theme - White Banners */
+[data-theme="light"] nav,
+[data-theme="light"] footer {
+    background-color: var(--light-banner-bg);
+    color: var(--light-banner-text);
+}
+
+/* Ensure Links Adjust in Light Mode */
+[data-theme="light"] nav ul li a {
+    color: var(--light-banner-text);
+}
+
+[data-theme="light"] .resume-link a {
     color: var(--button-bg);
 }
