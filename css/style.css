@@ -91,23 +91,37 @@ nav ul li a {
     outline: none;
 }
 
-/* Social Icons - Bigger */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
-}
-
+* Default Social Icon Styling */
 .social-links a {
-    font-size: 28px;
-    color: var(--text-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: var(--secondary-color); /* Default for dark mode */
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 24px;
 }
 
+/* Light Theme: Cobalt Blue Icons */
+[data-theme="light"] .social-links a {
+    color: #0047AB !important; /* Cobalt Blue */
+}
+
+/* Dark Theme: Keep Icons White */
+[data-theme="dark"] .social-links a {
+    color: #ffffff !important;
+}
+
+/* Hover Effect */
 .social-links a:hover {
-    color: var(--button-hover);
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 /* Resume Link */
