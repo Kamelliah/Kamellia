@@ -16,8 +16,8 @@
     --dropdown-dark: #003366; /* Darker blue for dropdown in dark mode */
 }
 
-/* Import Fenty Beauty Font */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+/* Import Custom Font for Kamellia Hyacinth */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /* Light Theme */
 body {
@@ -40,58 +40,11 @@ body {
     color: var(--text-light);
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: none;
-    box-shadow: none;
-    align-self: center;
-    position: relative;
-    top: 0;
-}
-
-/* Headings */
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Move Name Closer to Home & Apply Fenty Beauty Font */
+/* Name Styling - Updated Font */
 nav h1 {
     margin-left: 10px; /* Moves closer to Home */
-    font-size: 30px;
-    font-family: 'Baskervville', serif; /* Fenty Beauty-like font */
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; /* Custom script font */
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -142,44 +95,12 @@ nav h1 {
     color: var(--text-light);
 }
 
-/* Profile and About Me Alignment */
-#profile-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 20px;
-}
-
-#profile-left {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-}
-
-#profile-left p {
-    margin: 0; /* Remove extra spacing between elements */
-}
-
-#profile-right {
-    flex: 1.5;
-    text-align: left;
-    padding-left: 40px;
-}
-
 /* Social Icon Styling */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 2px; /* Adjusted spacing */
-    margin-top: 10px;
+    gap: 0px; /* Reduced spacing */
+    margin-top: 5px;
 }
 
 .social-links a {
@@ -189,11 +110,44 @@ nav h1 {
     width: 50px; /* Bigger size */
     height: 50px;
     font-size: 26px; /* Increased icon size */
-    margin: 0;
+    margin: 0 2px; /* Reduce margin for tighter grouping */
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
     text-decoration: none;
+}
+
+/* Ensure Dark, Light, and Automatic Are in Dropdown */
+#themeToggle {
+    position: relative;
+    cursor: pointer;
+}
+
+#themeMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--dropdown-light);
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    border-radius: 5px;
+}
+
+#themeMenu a {
+    color: var(--text-dark);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+#themeMenu a:hover {
+    background-color: var(--button-bg);
+    color: var(--text-light);
+}
+
+.theme-dropdown:hover #themeMenu {
+    display: block;
 }
 
 /* Interests & Education Two-Column Layout */
@@ -217,6 +171,12 @@ nav h1 {
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
+    margin-bottom: 5px; /* Reduce gap between education items */
+}
+
+/* Reduce gap between MS-HCA Student and University Name */
+#profile-left p {
+    margin: 2px 0; /* Remove extra spacing */
 }
 
 /* Footer */
@@ -246,4 +206,5 @@ footer {
     text-decoration: none;
     color: var(--button-bg);
 }
+
 
