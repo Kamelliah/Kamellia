@@ -73,16 +73,29 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Education & Services Layout */
-#education-services {
+#interests-education {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    margin-top: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-#education, #services {
+#interests, #education {
     flex: 1;
+    text-align: left;
+}
+
+#interests {
+    padding-right: 20px; /* Adds spacing between interests and education */
+}
+
+#education {
+    padding-left: 20px;
+}
+
+#interests p, #education p {
+    margin: 10px 0;
 }
 
 /* Profile Layout */
