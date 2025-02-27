@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #002244;
+    --primary-color: #002244; /* Keep this for light mode */
     --secondary-color: #ffffff;
-    --dark-bg: #282C34; 
+    --dark-bg: #2A2D34; /* Adjusted to match Jason's dark mode */
     --light-bg: #f8f9fa;
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -9,6 +9,10 @@
     --button-hover: #0056b3;
 }
 
+[data-theme="dark"] {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
