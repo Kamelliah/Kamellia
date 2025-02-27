@@ -23,12 +23,12 @@ body {
     line-height: 1.6;
 }
 .profile-pic {
-    width: 250px;
-    height: 250px;
+    width: 250px; /* Adjust width  */
+    height: 250px; /* Adjust height to keep it proportionate */
     border-radius: 50%;
     object-fit: cover;
-    border: none; /* Removes the border */
-    box-shadow: none; /* Removes any shadow */
+    border: none; /* Ensure no border appears */
+    box-shadow: none; /* Remove unwanted shadows */
 }
 
 /* Headings */
