@@ -169,9 +169,12 @@ nav ul li a {
     padding: 20px 0;
 }
 
-#interests, #education {
-    flex: 1;
-    text-align: left;
+#interests p {
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 15px; /* Reduced from 15px to 5px */
+    padding-right: 10px; /* Reduced spacing */
+    line-height: 1.2; /* Adjusted to make bullets closer */
 }
 
 /* Keep Interests in One Line */
