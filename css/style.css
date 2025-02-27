@@ -2,7 +2,7 @@
 :root {
     --primary-color: #002244;
     --secondary-color: #ffffff;
-    --dark-bg: #001533; /* Adjusted to a deeper blue for dark mode */
+    --dark-bg: #0047AB; /* Cobalt Blue for Dark Mode */
     --light-bg: #ffffff;
     --text-dark: #212529;
     --text-light: #ffffff;
@@ -96,6 +96,52 @@ nav h1 {
     letter-spacing: 1px;
 }
 
+/* Theme Dropdown */
+.theme-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.theme-dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.theme-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--dropdown-light);
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.theme-dropdown .dropdown-content a {
+    color: var(--text-dark);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.theme-dropdown .dropdown-content a:hover {
+    background-color: var(--button-bg);
+    color: var(--text-light);
+}
+
+.theme-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+[data-theme="dark"] .theme-dropdown .dropdown-content {
+    background-color: var(--dropdown-dark);
+    color: var(--text-light);
+}
+
 /* Profile and About Me Alignment */
 #profile-container {
     display: flex;
@@ -118,6 +164,10 @@ nav h1 {
     align-self: flex-start;
 }
 
+#profile-left p {
+    margin: 0; /* Remove extra spacing between elements */
+}
+
 #profile-right {
     flex: 1.5;
     text-align: left;
@@ -128,7 +178,7 @@ nav h1 {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Reduced spacing between icons */
+    gap: 2px; /* Adjusted spacing */
     margin-top: 10px;
 }
 
@@ -136,9 +186,9 @@ nav h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px; /* Increased size to match Jason’s */
-    height: 45px;
-    font-size: 24px; /* Increased icon size */
+    width: 50px; /* Bigger size */
+    height: 50px;
+    font-size: 26px; /* Increased icon size */
     margin: 0;
     background-color: transparent;
     border-radius: 50%;
@@ -162,13 +212,11 @@ nav h1 {
     padding: 0 20px;
 }
 
-/* Theme Dropdown Colors */
-.theme-dropdown .dropdown-content {
-    background-color: var(--dropdown-light);
-}
-
-[data-theme="dark"] .theme-dropdown .dropdown-content {
-    background-color: var(--dropdown-dark);
+#education p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
 }
 
 /* Footer */
