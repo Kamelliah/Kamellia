@@ -76,6 +76,30 @@ h2 {
     color: var(--primary-color);
 }
 
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#about-left {
+    flex: 2;
+    text-align: left;
+}
+
+#about-right {
+    flex: 1;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.education, .memberships {
+    margin-top: 20px;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -129,16 +153,6 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-weight: bold;
-}
-
-/* Improved Contact Section Like Jason’s */
 .contact-container {
     background-color: var(--contact-bg);
     color: var(--secondary-color);
@@ -174,7 +188,15 @@ footer {
     overflow: hidden;
 }
 
-/* Automatic Theme Based on Time */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-bg);
@@ -200,5 +222,4 @@ footer {
         background-color: var(--primary-color);
     }
 }
-
 
