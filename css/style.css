@@ -68,7 +68,20 @@ nav {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-
+/* Adjust Title Alignment */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Reduce spacing between title and menu */
+}
+/* Move Navigation Closer */
+.nav-left h1 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Jazz LET", fantasy;
+    margin: 0;
+    padding-right: 10px; /* Space between text and menu */
+}
 nav ul {
     list-style: none;
     display: flex;
