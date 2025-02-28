@@ -14,7 +14,10 @@
 }
 
 /* General Styling */
-body {
+html, body {
+    height: 100%; /* Make sure the full page height is used */
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
@@ -250,6 +253,7 @@ h3 { font-size: 20px; }
     max-width: 1100px; /* Control max width */
     margin: 50px auto 0; /* Center horizontally */
     padding: 20px 0;
+    flex: 1; /* This pushes the footer down */
      
 }
 
@@ -332,6 +336,9 @@ footer {
     font-size: 16px;
     font-weight: bold;
     margin-top: 40px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 [data-theme="dark"] footer {
