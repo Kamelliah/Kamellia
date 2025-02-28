@@ -99,28 +99,25 @@ html, body {
 
 /* Search Bar */
 .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     position: relative;
     margin-left: 15px;
 }
-
-.search-container input {
-    padding-left: 30px;
-    padding: 6px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-size: 14px;
-    width: 160px;
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-dark); /* Adjust based on your theme */
 }
 
-.search-container .fa-search {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: gray;
-}
+.search-icon:hover {
+    color: var(--button-hover); /* Changes color on hover */
 
+}
 /* Right Icons */
 .nav-icons {
     display: flex;
