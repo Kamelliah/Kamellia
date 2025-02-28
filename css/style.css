@@ -266,41 +266,64 @@ nav ul li a {
     padding-left: 40px;
 }
 
-/* Theme Dropdown */
+/* Ensure the Theme Toggle Dropdown is Styled Correctly */
 .theme-dropdown {
     position: relative;
     display: inline-block;
 }
 
+/* Ensure Theme Toggle Button Matches Theme Colors */
 #themeToggle {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 20px;
-    color: var(--secondary-color);
+    padding: 5px 10px;
+    color: var(--text-dark);
 }
 
+/* Dark Mode: Ensure Theme Toggle Button Color */
+[data-theme="dark"] #themeToggle {
+    color: var(--text-light);
+}
+
+/* Dropdown Menu */
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
-    background-color: var(--primary-color);
-    min-width: 120px;
+    background-color: var(--light-bg);
+    min-width: 140px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     z-index: 1000;
+    padding: 10px 0;
 }
 
+/* Dark Mode: Dropdown Styling */
+[data-theme="dark"] .dropdown-content {
+    background-color: var(--dark-bg);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Theme Options */
 .dropdown-content a {
-    color: var(--secondary-color);
-    padding: 10px 12px;
+    color: var(--text-dark);
+    padding: 8px 12px;
     text-decoration: none;
     display: block;
     font-size: 14px;
 }
 
+/* Dark Mode: Theme Text Color */
+[data-theme="dark"] .dropdown-content a {
+    color: var(--text-light);
+}
+
+/* Hover Effect */
 .dropdown-content a:hover {
     background-color: var(--button-hover);
+    color: var(--secondary-color);
 }
 
 /* Show Dropdown When Hovering */
@@ -309,30 +332,12 @@ nav ul li a {
     display: block;
 }
 
-/* Dark Mode Styling */
-[data-theme="dark"] body {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-}
-
-[data-theme="dark"] nav {
-    background-color: var(--dark-bg);
-}
-
-[data-theme="dark"] .resume-link a,
-[data-theme="dark"] .dropdown-content a {
-    color: var(--secondary-color);
-}
-
-[data-theme="dark"] #searchBar {
-    background-color: #333;
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-}
-
-[data-theme="dark"] #searchBar::placeholder {
-    color: #aaa;
-}
+/* Auto Mode Detection */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+    }
 
 /* Footer Section */
 footer {
