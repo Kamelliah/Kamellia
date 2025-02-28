@@ -64,12 +64,12 @@ html, body {
     box-shadow: 0px 8px 14px rgba(255, 255, 255, 0.15);
 }
 
-/* Navbar Title - Jazz LET Font */
+/* Navbar Title */
 .navbar-title {
     font-size: 22px;
     font-weight: bold;
     font-family: "Jazz LET", fantasy;
-    margin-right: 20px; /* Bring closer to menu */
+    margin-right: 20px;
 }
 
 /* Navigation Links */
@@ -100,7 +100,7 @@ html, body {
 /* Search Bar */
 .search-container {
     position: relative;
-    margin-left: 15px; /* Bring closer to menu */
+    margin-left: 15px;
 }
 
 .search-container input {
@@ -110,7 +110,7 @@ html, body {
     border: 1px solid #ccc;
     outline: none;
     font-size: 14px;
-    width: 160px; /* Adjust width */
+    width: 160px;
 }
 
 .search-container .fa-search {
@@ -138,9 +138,113 @@ html, body {
     color: var(--text-light);
 }
 
-/* Hide Hamburger by Default */
-.hamburger {
-    display: none;
+/* Social Media Icons - Set Size to 30px */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 30px; /* Updated to 30px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+[data-theme="light"] .social-links a {
+    color: var(--icon-light);
+}
+
+[data-theme="dark"] .social-links a {
+    color: var(--icon-dark);
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Reduce Spacing Between Interests */
+#interests p {
+    margin: 5px 0; /* Decrease spacing */
+    padding: 2px 0;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Profile Section */
+#profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 70px auto 0;
+    padding: 20px 0;
+    flex-grow: 1;
+}
+
+#profile-left h2, #profile-left p {
+    flex: 0.4;
+    text-align: center;
+}
+
+#profile-right {
+    flex: 0.6;
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Interests & Education - Two Columns */
+#interests-education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    column-gap: 40px;
+}
+
+/* Remove Bullet Points from Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+[data-theme="dark"] footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
 }
 
 /* Mobile Navigation */
@@ -171,55 +275,5 @@ html, body {
     .nav-links li {
         padding: 10px;
     }
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/* Profile Section */
-#profile-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 1100px;
-    margin: 70px auto 0;
-    padding: 20px 0;
-    flex-grow: 1; /* Push footer to bottom */
-}
-
-#profile-left h2, #profile-left p {
-    flex: 0.4;
-    text-align: center;
-}
-
-#profile-right {
-    flex: 0.6;
-    text-align: left;
-    padding-left: 40px;
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: auto;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-
-[data-theme="dark"] footer {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
 }
 
