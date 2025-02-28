@@ -40,7 +40,7 @@ a {
     max-width: 770px; /* Adjust width to make it wider */
     margin: 0 auto; /* Centers the section */
     text-align: justify; /* Improves text readability */
-    padding: 10px; /* Adds space around text */
+    padding: 20px; /* Adds space around text */
     line-height: 1.4; /* Reduce line height slightly */
 }
 /* Navbar Styling */
