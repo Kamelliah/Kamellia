@@ -15,7 +15,7 @@
 
 /* General Styling */
 html, body {
-    height: 100%; /* Make sure the full page height is used */
+    height: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
@@ -38,7 +38,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 12px 20px; /* Better padding */
     background-color: var(--light-bg);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -46,14 +46,16 @@ html, body {
     top: 0;
     left: 0;
     z-index: 1000;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transition: all 0.3s ease-in-out;
 }
+
 /* Navbar Raised Effect */
 .navbar.raised {
-    height: 45px; /* Slightly smaller when scrolling */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow when raised */
+    padding: 10px 20px; /* Reduce padding when scrolled */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.95);
 }
+
 [data-theme="dark"] .navbar {
     background-color: var(--dark-bg);
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
@@ -61,26 +63,26 @@ html, body {
 [data-theme="dark"] .navbar.raised {
     box-shadow: 0px 8px 14px rgba(255, 255, 255, 0.15);
 }
+
 /* Navbar Title - Jazz LET Font */
 .navbar-title {
     font-size: 22px;
     font-weight: bold;
     font-family: "Jazz LET", fantasy;
-    margin-right: 40px; /* Bring closer to menu */
+    margin-right: 20px; /* Bring closer to menu */
 }
 
 /* Navigation Links */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .nav-links li {
-    display: inline-block;
+    padding: 10px;
 }
-
 .nav-links a {
     text-decoration: none;
     font-size: 16px;
@@ -91,13 +93,6 @@ html, body {
 .nav-links a:hover {
     color: var(--button-bg);
 }
-/* Remove Bullet Points from Lists */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 [data-theme="dark"] .nav-links a {
     color: var(--text-light);
 }
@@ -105,17 +100,17 @@ ul {
 /* Search Bar */
 .search-container {
     position: relative;
-    margin-left: 28px; /* Move closer to menu */
+    margin-left: 15px; /* Bring closer to menu */
 }
 
 .search-container input {
-    padding-left: 28px;
+    padding-left: 30px;
     padding: 6px;
     border-radius: 20px;
     border: 1px solid #ccc;
     outline: none;
     font-size: 14px;
-    width: 150px; /* Reduce width slightly */
+    width: 160px; /* Adjust width */
 }
 
 .search-container .fa-search {
@@ -130,8 +125,7 @@ ul {
 .nav-icons {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-left: 15px;
+    gap: 10px;
 }
 
 .nav-icons i {
@@ -144,14 +138,40 @@ ul {
     color: var(--text-light);
 }
 
-/* Headings */
-h1, h2, h3 {
-    font-weight: bold;
+/* Hide Hamburger by Default */
+.hamburger {
+    display: none;
 }
 
-h1 { font-size: 28px; }
-h2 { font-size: 22px; }
-h3 { font-size: 20px; }
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--light-bg);
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+}
 
 /* Profile Picture */
 .profile-pic {
@@ -159,102 +179,18 @@ h3 { font-size: 20px; }
     height: 230px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px; /* Add space below the image */
-
-}
-
-/* Social Icons */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 10px;
-}
-
-.social-links a {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-[data-theme="light"] .social-links a {
-    color: var(--icon-light);
-}
-
-[data-theme="dark"] .social-links a {
-    color: var(--icon-dark);
-}
-
-.social-links a:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-/* Resume Link */
-.resume-link {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.resume-link i, .resume-link a {
-    color: var(--button-bg);
-    text-decoration: none;
-}
-
-.resume-link a:hover {
-    text-decoration: underline;
-}
-
-/* Interests & Education Section */
-#interests-education {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
-    column-gap: 40px;
-}
-
-#interests p, #education p {
-    white-space: nowrap;
-    display: inline-block;
-    margin-right: 5px;
-    padding-bottom: 0;
-    line-height: 1.1;
-    font-size: 16px;
-}
-
-/* Remove Underline from University Links */
-.university-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.university-link:hover {
-    color: var(--button-bg);
+    margin-bottom: 10px;
 }
 
 /* Profile Section */
 #profile-container {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 1100px; /* Control max width */
-    margin: 50px auto 0; /* Center horizontally */
+    justify-content: center;
+    max-width: 1100px;
+    margin: 70px auto 0;
     padding: 20px 0;
-    flex: 1; /* This pushes the footer down */
-     
+    flex-grow: 1; /* Push footer to bottom */
 }
 
 #profile-left h2, #profile-left p {
@@ -265,66 +201,7 @@ h3 { font-size: 20px; }
 #profile-right {
     flex: 0.6;
     text-align: left;
-    padding-left: 50px;
-}
-
-/* Theme Toggle */
-.theme-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-#themeToggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 5px 10px;
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] #themeToggle {
-    color: var(--text-light);
-}
-
-/* Dropdown Menu */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: var(--light-bg);
-    min-width: 140px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    z-index: 1000;
-    padding: 10px 0;
-}
-
-[data-theme="dark"] .dropdown-content {
-    background-color: var(--dark-bg);
-}
-
-.dropdown-content a {
-    color: var(--text-dark);
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-
-[data-theme="dark"] .dropdown-content a {
-    color: var(--text-light);
-}
-
-.dropdown-content a:hover {
-    background-color: var(--button-hover);
-    color: var(--secondary-color);
-}
-
-/* Show Dropdown When Hovering */
-.theme-dropdown:hover .dropdown-content,
-.theme-dropdown:focus-within .dropdown-content {
-    display: block;
+    padding-left: 40px;
 }
 
 /* Footer */
@@ -335,7 +212,7 @@ footer {
     padding: 15px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: auto;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -344,19 +221,5 @@ footer {
 [data-theme="dark"] footer {
     background-color: var(--dark-bg);
     color: var(--text-light);
-}
-
-/* Light Theme Banners */
-[data-theme="light"] nav, [data-theme="light"] footer {
-    background-color: var(--light-banner-bg);
-    color: var(--light-banner-text);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
