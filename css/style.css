@@ -23,6 +23,7 @@ html, body {
     color: var(--text-dark);
     margin: 0;
     padding: 0;
+    padding-top: 50px; /* Adjust to match new navbar height */
     font-size: 16px;
     line-height: 1.6;
 }
@@ -46,7 +47,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px; /* Better padding */
+    padding: 5px 15px; /* Better padding */
     background-color: var(--light-bg);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -59,7 +60,7 @@ a {
 
 /* Navbar Raised Effect */
 .navbar.raised {
-    padding: 10px 20px; /* Reduce padding when scrolled */
+    padding: 6px 15px; /* Reduce padding when scrolled */
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.95);
 }
@@ -74,7 +75,7 @@ a {
 
 /* Navbar Title */
 .navbar-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     font-family: "Jazz LET", fantasy;
     margin-right: 20px;
@@ -95,10 +96,12 @@ a {
 }
 .nav-links a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--text-dark);
     transition: color 0.3s ease-in-out;
+    padding: 5px; /* Adjust spacing */
+    
 }
 .nav-links a:hover {
     color: var(--button-bg);
