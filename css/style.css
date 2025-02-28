@@ -37,7 +37,7 @@ a {
     color: var(--text-light);
 }
 #about-me {
-    max-width: 770px; /* Adjust width to make it wider */
+    max-width: 800px; /* Adjust width to make it wider */
     margin: 0 auto; /* Centers the section */
     text-align: justify; /* Improves text readability */
     padding: 20px; /* Adds space around text */
