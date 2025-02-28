@@ -65,8 +65,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Raised effect */
+    position: fixed; /* Keeps it at the top while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
 }
 /* Adjust Title Alignment */
 .nav-left {
@@ -95,12 +101,31 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--secondary-color);
+    color: var(--text-dark);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+/* Hover Effect */
+#nav-bar ul li a:hover {
+    color: var(--button-bg);
 }
 
+/* Dark Mode Styling */
+[data-theme="dark"] #nav-bar {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] #nav-bar ul li a {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] #nav-bar ul li a:hover {
+    color: var(--icon-dark);
+}
 /* Right Section: Search & Theme Toggle */
 .nav-right {
     display: flex;
@@ -220,7 +245,7 @@ nav ul li a {
 /* Profile Section */
 #profile-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 40px;
     max-width: 1100px;
@@ -229,14 +254,14 @@ nav ul li a {
 
 #profile-left h2,
 #profile-left p{
-    margin: 2px 0; /* Reduce space between lines */
+    margin: 2.5px 0; /* Reduce space between lines */
     line-height: 1.2; /* Adjust line height for tighter spacing */
-    flex: 1;
+    flex: 0.8;
     text-align: center;
 }
 
 #profile-right {
-    flex: 2;
+    flex: 1.2;
     text-align: left;
     padding-left: 40px;
 }
