@@ -13,7 +13,7 @@
     --light-banner-text: #000000;
 }
 
-/* Light Theme */
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--light-bg);
@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* Dark Theme */
+/* Dark Mode */
 [data-theme="dark"] {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -45,16 +45,38 @@ body {
     z-index: 1000;
 }
 
-/* Dark Mode Navbar */
 [data-theme="dark"] .navbar {
     background-color: var(--dark-bg);
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Title Styling */
+/* Navbar Title - Jazz LET Font */
 .navbar-title {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
+    font-family: "Jazz LET", fantasy;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-dark);
+    transition: color 0.3s ease-in-out;
+}
+
+[data-theme="dark"] .nav-links a {
+    color: var(--text-light);
+}
+
+.nav-links a:hover {
+    color: var(--button-bg);
 }
 
 /* Search Bar */
@@ -72,7 +94,6 @@ body {
     width: 180px;
 }
 
-/* Search Icon */
 .search-container .fa-search {
     position: absolute;
     left: 10px;
@@ -85,13 +106,17 @@ body {
 .nav-icons {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .nav-icons i {
-    margin-left: 15px;
     font-size: 18px;
     cursor: pointer;
     color: gray;
+}
+
+[data-theme="dark"] .nav-icons i {
+    color: var(--text-light);
 }
 
 /* Headings */
@@ -132,7 +157,6 @@ h3 { font-size: 20px; }
     transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Light & Dark Mode Social Icons */
 [data-theme="light"] .social-links a {
     color: var(--icon-light);
 }
@@ -141,7 +165,6 @@ h3 { font-size: 20px; }
     color: var(--icon-dark);
 }
 
-/* Hover Effect */
 .social-links a:hover {
     transform: scale(1.1);
     opacity: 0.8;
@@ -176,7 +199,6 @@ h3 { font-size: 20px; }
     column-gap: 40px;
 }
 
-/* Interests */
 #interests p, #education p {
     white-space: nowrap;
     display: inline-block;
@@ -234,7 +256,6 @@ h3 { font-size: 20px; }
     color: var(--text-dark);
 }
 
-/* Dark Mode: Theme Toggle */
 [data-theme="dark"] #themeToggle {
     color: var(--text-light);
 }
@@ -256,7 +277,6 @@ h3 { font-size: 20px; }
     background-color: var(--dark-bg);
 }
 
-/* Theme Options */
 .dropdown-content a {
     color: var(--text-dark);
     padding: 8px 12px;
@@ -269,7 +289,6 @@ h3 { font-size: 20px; }
     color: var(--text-light);
 }
 
-/* Hover Effect */
 .dropdown-content a:hover {
     background-color: var(--button-hover);
     color: var(--secondary-color);
@@ -292,7 +311,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Dark Mode Footer */
 [data-theme="dark"] footer {
     background-color: var(--dark-bg);
     color: var(--text-light);
@@ -304,15 +322,10 @@ footer {
     color: var(--light-banner-text);
 }
 
-/* Dark Mode Footer */
-[data-theme="dark"] footer {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     #interests-education {
         grid-template-columns: 1fr;
     }
 }
+
