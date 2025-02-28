@@ -212,6 +212,18 @@ html, body {
     padding-left: 40px;
 }
 
+#interests {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text to the left */
+}
+
+#interests p {
+    white-space: nowrap; /* Prevents text from wrapping */
+    display: block; /* Ensures each item is on a new line */
+    margin-bottom: 0px; /* Adds spacing between each interest */
+}
+
 /* Interests & Education - Two Columns */
 #interests-education {
     display: grid;
@@ -220,6 +232,15 @@ html, body {
     margin: 0 auto;
     padding: 20px 0;
     column-gap: 40px;
+}
+
+#education {
+    white-space: nowrap; /* Prevents breaking into two lines */
+}
+
+#education p {
+    display: inline-block; /* Ensures it stays in one row */
+    max-width: 100%; /* Ensures text doesn't wrap unnecessarily */
 }
 
 /* Remove Bullet Points from Lists */
