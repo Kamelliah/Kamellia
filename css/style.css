@@ -246,13 +246,13 @@ a {
 }
 
 #education {
-    white-space: nowrap; /* Prevents breaking into two lines */
+    white-space: normal; /* Allow line breaks */
 }
 
 #education p {
-    margin: 5px 0; /* Adds spacing between each line */
-    display: inline-block; /* Ensures it stays in one row */
-    max-width: 100%; /* Ensures text doesn't wrap unnecessarily */
+    margin: 5px 0; /* Add spacing between each line */
+    display: block; /* Ensures each university appears on its own line */
+    max-width: 100%; /* Prevents unnecessary wrapping */
     line-height: 1.5; /* Improves readability */
 }
 
