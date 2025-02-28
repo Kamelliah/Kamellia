@@ -245,6 +245,14 @@ a {
     margin: 0 auto;
     gap: 60px;
 }
+#interests {
+    flex: 1; /* Interests takes less space */
+}
+
+#education {
+    flex: 1.5; /* Education takes more space */
+}
+
 /* Education Section Styling */
 #education {
     display: flex;
