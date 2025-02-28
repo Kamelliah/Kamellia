@@ -7,14 +7,10 @@
     --text-light: #ffffff;
     --button-bg: #007bff;
     --button-hover: #0056b3;
-
-    /* Social Icon Colors */
     --icon-light: #0047AB;
     --icon-dark: #b0c7f1;
-
-    /* Light Theme Banner Colors */
-    --light-banner-bg: #ffffff;  /* White for Light Mode */
-    --light-banner-text: #000000; /* Black Text for Light Mode */
+    --light-banner-bg: #ffffff;
+    --light-banner-text: #000000;
 }
 
 /* Light Theme */
@@ -34,37 +30,13 @@ body {
     color: var(--text-light);
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: none;
-    box-shadow: none;
-}
-
-/* Headings */
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 20px;
-}
 /* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #fff;
+    background-color: var(--light-bg);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -73,13 +45,19 @@ h3 {
     z-index: 1000;
 }
 
+/* Dark Mode Navbar */
+[data-theme="dark"] .navbar {
+    background-color: var(--dark-bg);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
 /* Title Styling */
 .navbar-title {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Search Bar Container */
+/* Search Bar */
 .search-container {
     position: relative;
 }
@@ -91,6 +69,7 @@ h3 {
     border: 1px solid #ccc;
     outline: none;
     font-size: 14px;
+    width: 180px;
 }
 
 /* Search Icon */
@@ -115,116 +94,49 @@ h3 {
     color: gray;
 }
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Raised effect */
-    position: fixed; /* Keeps it at the top while scrolling */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--light-bg);
-    color: var(--text-dark);
-}
-/* Adjust Title Alignment */
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Reduce spacing between title and menu */
-}
-/* Move Navigation Closer */
-.nav-left h1 {
-    font-size: 28px;
+/* Headings */
+h1, h2, h3 {
     font-weight: bold;
-    font-family: "Jazz LET", fantasy;
-    margin: 0;
-    padding-right: 10px; /* Space between text and menu */
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
 }
 
-nav ul li {
-    display: inline-block;
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+
+/* Profile Picture */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-nav ul li a {
-    color: var(--text-dark);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-/* Hover Effect */
-#nav-bar ul li a:hover {
-    color: var(--button-bg);
-}
-
-/* Dark Mode Styling */
-[data-theme="dark"] #nav-bar {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="dark"] #nav-bar ul li a {
-    color: var(--text-light);
-}
-
-[data-theme="dark"] #nav-bar ul li a:hover {
-    color: var(--icon-dark);
-}
-/* Right Section: Search & Theme Toggle */
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-/* Search Bar */
-#searchBar {
-    padding: 8px 12px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    width: 180px;
-    outline: none;
-}
-
-/* Social Icon Styling */
+/* Social Icons */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 0px; /* Reduce space between icons */
+    gap: 5px;
     margin-top: 10px;
 }
 
 .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Match Jason’s size */
-    height: 40px;
-    font-size: 30px;
-    background-color: transparent;
+    background: transparent;
     border-radius: 50%;
-    transition: 0.3s;
     text-decoration: none;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Light Theme: Cobalt Blue Icons */
+/* Light & Dark Mode Social Icons */
 [data-theme="light"] .social-links a {
     color: var(--icon-light);
 }
 
-/* Dark Theme: Light Blue Icons */
 [data-theme="dark"] .social-links a {
     color: var(--icon-dark);
 }
@@ -245,11 +157,7 @@ nav ul li a {
     gap: 8px;
 }
 
-.resume-link i {
-    color: var(--button-bg);
-}
-
-.resume-link a {
+.resume-link i, .resume-link a {
     color: var(--button-bg);
     text-decoration: none;
 }
@@ -257,34 +165,25 @@ nav ul li a {
 .resume-link a:hover {
     text-decoration: underline;
 }
+
+/* Interests & Education Section */
 #interests-education {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    grid-template-columns: 1fr 1fr;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 0;
-    column-gap: 40px; /* Space between columns */
+    column-gap: 40px;
 }
 
-/* Adjust left padding for Education to ensure better alignment */
-#education {
-    padding-left: 40px;
-}
-#interests p {
+/* Interests */
+#interests p, #education p {
     white-space: nowrap;
     display: inline-block;
-    margin-right: 5px; /* Less space between bullets */
-    padding-right: 5px;
-    margin-bottom: 2px; /* Reduce space between each interest */
-    padding-bottom: 0; /* Remove extra padding */
-    line-height: 1.1; /* Reduce line spacing */
+    margin-right: 5px;
+    padding-bottom: 0;
+    line-height: 1.1;
     font-size: 16px;
-}
-/* Keep Education on One Line */
-#education p {
-    white-space: nowrap;
-    display: inline-block;
-    padding-left: 20px;
 }
 
 /* Remove Underline from University Links */
@@ -294,7 +193,6 @@ nav ul li a {
 }
 
 .university-link:hover {
-    text-decoration: none;
     color: var(--button-bg);
 }
 
@@ -308,10 +206,9 @@ nav ul li a {
     margin: 0 auto;
 }
 
-#profile-left h2,
-#profile-left p{
-    margin: 2.5px 0; /* Reduce space between lines */
-    line-height: 1.2; /* Adjust line height for tighter spacing */
+#profile-left h2, #profile-left p {
+    margin: 2.5px 0;
+    line-height: 1.2;
     flex: 0.8;
     text-align: center;
 }
@@ -322,13 +219,12 @@ nav ul li a {
     padding-left: 40px;
 }
 
-/* Ensure the Theme Toggle Dropdown is Styled Correctly */
+/* Theme Toggle */
 .theme-dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Ensure Theme Toggle Button Matches Theme Colors */
 #themeToggle {
     background: none;
     border: none;
@@ -338,7 +234,7 @@ nav ul li a {
     color: var(--text-dark);
 }
 
-/* Dark Mode: Ensure Theme Toggle Button Color */
+/* Dark Mode: Theme Toggle */
 [data-theme="dark"] #themeToggle {
     color: var(--text-light);
 }
@@ -356,10 +252,8 @@ nav ul li a {
     padding: 10px 0;
 }
 
-/* Dark Mode: Dropdown Styling */
 [data-theme="dark"] .dropdown-content {
     background-color: var(--dark-bg);
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 /* Theme Options */
@@ -371,7 +265,6 @@ nav ul li a {
     font-size: 14px;
 }
 
-/* Dark Mode: Theme Text Color */
 [data-theme="dark"] .dropdown-content a {
     color: var(--text-light);
 }
@@ -388,19 +281,8 @@ nav ul li a {
     display: block;
 }
 
-/* Auto Mode Detection */
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        background-color: var(--dark-bg);
-        color: var(--text-light);
-    }
-
-/* Footer Section */
+/* Footer */
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
@@ -410,33 +292,27 @@ footer {
     margin-top: 40px;
 }
 
-/* Default Dark Theme (No Changes Needed) */
-nav {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+/* Dark Mode Footer */
+[data-theme="dark"] footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-/* Light Theme - White Banners */
-[data-theme="light"] nav,
-[data-theme="light"] footer {
+/* Light Theme Banners */
+[data-theme="light"] nav, [data-theme="light"] footer {
     background-color: var(--light-banner-bg);
     color: var(--light-banner-text);
 }
-/* Dark Mode: Remove Blue Background, Match Body */
+
+/* Dark Mode Footer */
 [data-theme="dark"] footer {
-    background-color: var(--dark-bg); /* Same as body */
+    background-color: var(--dark-bg);
     color: var(--text-light);
 }
-/* Ensure Links Adjust in Light Mode */
-[data-theme="light"] nav ul li a {
-    color: var(--light-banner-text);
-}
 
-[data-theme="light"] .resume-link a {
-    color: var(--button-bg);
+/* Responsive Design */
+@media (max-width: 768px) {
+    #interests-education {
+        grid-template-columns: 1fr;
+    }
 }
