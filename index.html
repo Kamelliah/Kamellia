@@ -22,8 +22,7 @@
             </ul>
             <div class="nav-right">
                 <div class="search-container">
-                    <input type="text" id="searchBar" placeholder="Search...">
-                    <button type="submit">🔍</button>
+                <button type="button" class="search-icon">🔍</button>  
                 </div>
                 <div class="nav-icons">
                     <i class="fa fa-twitter"></i>
@@ -116,7 +115,9 @@
         document.documentElement.setAttribute("data-theme", theme);
         localStorage.setItem("theme", theme);
     }
-
+    document.querySelector(".search-icon").addEventListener("click", function() {
+    alert("Search functionality coming soon!");
+}
     document.addEventListener("DOMContentLoaded", () => {
         const savedTheme = localStorage.getItem("theme");
         if (!savedTheme || savedTheme === 'auto') {
