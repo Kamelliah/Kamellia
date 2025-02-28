@@ -43,7 +43,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    ransition: all 0.3s ease-in-out; /* Smooth transition */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 /* Navbar Raised Effect */
 .navbar.raised {
