@@ -60,16 +60,16 @@ body {
 }
 /* Navbar Title - Jazz LET Font */
 .navbar-title {
-    font-size: 35px;
+    font-size: 22px;
     font-weight: bold;
     font-family: "Jazz LET", fantasy;
-    margin: 0;
+    margin-right: 20px; /* Bring closer to menu */
 }
 
 /* Navigation Links */
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -80,7 +80,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--text-dark);
     transition: color 0.3s ease-in-out;
@@ -88,6 +88,13 @@ body {
 .nav-links a:hover {
     color: var(--button-bg);
 }
+/* Remove Bullet Points from Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 [data-theme="dark"] .nav-links a {
     color: var(--text-light);
 }
@@ -95,16 +102,17 @@ body {
 /* Search Bar */
 .search-container {
     position: relative;
+    margin-left: 20px; /* Move closer to menu */
 }
 
 .search-container input {
     padding-left: 30px;
-    padding: 8px;
+    padding: 6px;
     border-radius: 20px;
     border: 1px solid #ccc;
     outline: none;
     font-size: 14px;
-    width: 180px;
+    width: 160px; /* Reduce width slightly */
 }
 
 .search-container .fa-search {
