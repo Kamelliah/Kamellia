@@ -35,7 +35,12 @@ a {
     background-color: var(--dark-bg);
     color: var(--text-light);
 }
-
+#about-me {
+    max-width: 800px; /* Adjust width to make it wider */
+    margin: 0 auto; /* Centers the section */
+    text-align: justify; /* Improves text readability */
+    padding: 20px; /* Adds space around text */
+}
 /* Navbar Styling */
 .navbar {
     display: flex;
