@@ -118,7 +118,7 @@ nav ul li a {
     justify-content: center;
     width: 40px; /* Match Jason’s size */
     height: 40px;
-    font-size: 32px;
+    font-size: 30px;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.3s;
@@ -169,7 +169,7 @@ nav ul li a {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 0;
-    column-gap: 50px; /* Space between columns */
+    column-gap: 40px; /* Space between columns */
 }
 
 /* Adjust left padding for Education to ensure better alignment */
@@ -190,7 +190,7 @@ nav ul li a {
 #education p {
     white-space: nowrap;
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 /* Remove Underline from University Links */
