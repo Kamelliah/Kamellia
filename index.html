@@ -99,32 +99,47 @@
         <p>&copy; 2025 Kamellia Hyacinth. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        function setTheme(theme) {
-            if (theme === 'auto') {
-                setThemeBasedOnTime();
-            } else {
-                document.documentElement.setAttribute("data-theme", theme);
-                localStorage.setItem("theme", theme);
-            }
-        }
+   <footer>
+    <p>&copy; 2025 Kamellia Hyacinth. All Rights Reserved.</p>
+</footer>
 
-        function setThemeBasedOnTime() {
-            const hour = new Date().getHours();
-            const theme = (hour >= 6 && hour < 18) ? "light" : "dark";
+<!-- JavaScript for Navbar Raise Effect on Scroll -->
+<script>
+    window.addEventListener("scroll", function () {
+        let navbar = document.querySelector("nav"); // Selects the <nav> element
+        if (window.scrollY > 10) { // If user scrolls down more than 10 pixels
+            navbar.classList.add("raised"); // Add the "raised" class
+        } else { 
+            navbar.classList.remove("raised"); // Remove the "raised" class when at the top
+        }
+    });
+</script>
+    
+<script>
+    function setTheme(theme) {
+        if (theme === 'auto') {
+            setThemeBasedOnTime();
+        } else {
             document.documentElement.setAttribute("data-theme", theme);
             localStorage.setItem("theme", theme);
         }
+    }
 
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedTheme = localStorage.getItem("theme");
-            if (!savedTheme || savedTheme === 'auto') {
-                setThemeBasedOnTime();
-            } else {
-                document.documentElement.setAttribute("data-theme", savedTheme);
-            }
-        });
-    </script>
+    function setThemeBasedOnTime() {
+        const hour = new Date().getHours();
+        const theme = (hour >= 6 && hour < 18) ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (!savedTheme || savedTheme === 'auto') {
+            setThemeBasedOnTime();
+        } else {
+            document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+    });
+</script>
 </body>
 </html>
-
