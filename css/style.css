@@ -47,8 +47,9 @@ body {
 }
 /* Navbar Raised Effect */
 .navbar.raised {
+    padding: 8px 30px;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow when raised */
-    transform: translateY(-2px); /* Slight lift */
+    background-color: rgba(255, 255, 255, 0.95);
 }
 [data-theme="dark"] .navbar {
     background-color: var(--dark-bg);
@@ -62,12 +63,19 @@ body {
     font-size: 28px;
     font-weight: bold;
     font-family: "Jazz LET", fantasy;
+    margin: 0;
 }
 
 /* Navigation Links */
 .nav-links {
     display: flex;
     gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-links li {
+    display: inline-block;
 }
 
 .nav-links a {
@@ -77,13 +85,11 @@ body {
     color: var(--text-dark);
     transition: color 0.3s ease-in-out;
 }
-
-[data-theme="dark"] .nav-links a {
-    color: var(--text-light);
-}
-
 .nav-links a:hover {
     color: var(--button-bg);
+}
+[data-theme="dark"] .nav-links a {
+    color: var(--text-light);
 }
 
 /* Search Bar */
@@ -331,8 +337,9 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #interests-education {
-        grid-template-columns: 1fr;
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
