@@ -227,7 +227,10 @@ nav ul li a {
     margin: 0 auto;
 }
 
-#profile-left {
+#profile-left h2,
+#profile-left p{
+    margin: 2px 0; /* Reduce space between lines */
+    line-height: 1.2; /* Adjust line height for tighter spacing */
     flex: 1;
     text-align: center;
 }
