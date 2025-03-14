@@ -40,7 +40,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/gcushen
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/kamellia
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
@@ -56,15 +56,16 @@ education:
     institution: University of Wisconsin La - Crosse
     date_start: 2023-05-28
     date_end: 2025-05-17
+    GPA: 4.0/4.0
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
       text: 'Read Portfolio'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
+  - area: BSc. Information Technology
     institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2011-01-21
+    date_end: 2015-12-31
     summary: |
       GPA: 3.8/4.0
 
