@@ -4,7 +4,7 @@ date: 2023-10-24
 type: landing
 
 design:
-  spacing: '5rem'  # Controls spacing between all sections
+  spacing: '3rem'  # ✅ Reduced spacing globally
 
 sections:
   - block: resume-experience
@@ -14,7 +14,7 @@ sections:
     design:
       date_format: 'January 2006'
       is_education_first: false
-      spacing: "0rem"  # ✅ Reduce space below this section
+      spacing: 0  # ✅ Removed unnecessary spacing
 
   - block: resume-skills
     content:
@@ -22,15 +22,15 @@ sections:
       username: admin
     design:
       show_skill_percentage: false
-      spacing: "2rem"  # ✅ Reduce space below this section
+      spacing: 2  # ✅ Moves Skills & Hobbies closer to Education
 
   - block: resume-awards
     content:
       title: Professional Development
       username: admin
     design:
-      spacing: "1rem"  # ✅ Add more space BELOW this section
-    
+      spacing: 3  # ✅ Maintains proper spacing but not too much
+
   - block: resume-languages
     content:
       title: Languages
