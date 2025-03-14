@@ -12,24 +12,27 @@ design:
 sections:
   - block: resume-experience
     content:
+      title: Work Experience
       username: admin
     design:
-      # Hugo date format
       date_format: 'January 2006'
-      # Education or Experience section first?
       is_education_first: false
+
+  - block: resume-experience  # ✅ Fix: Corrected to use resume-experience
+    content:
+      title: Professional Development
+      username: admin
+
   - block: resume-skills
     content:
       title: Skills & Hobbies
       username: admin
     design:
       show_skill_percentage: false
-  - block: resume-awards
-    content:
-      title: Professional Development
-      username: admin
+
   - block: resume-languages
     content:
       title: Languages
       username: admin
 ---
+
