@@ -80,7 +80,7 @@ education:
     date_start: 2011-01-21
     date_end: 2015-12-31
     summary: |
-      GPA: 3.8/4.0
+      GPA: 3.3/4.0
 
 work:
   - position: Healthcare Operations & Policy Intern
