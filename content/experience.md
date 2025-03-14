@@ -23,7 +23,7 @@ sections:
       show_skill_percentage: false
       spacing: "4rem"  # ✅ Add spacing between this section and the next one
 
-  - block: resume-experience
+  - block: resume-custom
     content:
       title: Professional Development
       username: admin
