@@ -73,7 +73,7 @@ education:
       Focused on optimizing hiring practices, updating employee handbooks, and improving onboarding processes at Circle of Hope, Inc II.
     button:
       text: "Read Proposal"
-      url: "https://example.com"
+      url: "uploads/Kamellia_Hyacinth_Resume.pdf"
 
   - area: BSc. Information Technology
     institution: St. George's University 
