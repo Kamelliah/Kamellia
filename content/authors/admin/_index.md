@@ -132,8 +132,8 @@ skills:
         icon: airplane  # Airplane for travel    
       - name: Hiking
         percent: 60
-        icon: airplane  # Airplane for travel     
-      - name: person-simple-walk
+        icon: person-simple-walk    
+      - name: Volunteering
         percent: 100
         icon: hand-heart  # Volunteering/helping hand
 
