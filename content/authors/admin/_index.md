@@ -3,7 +3,7 @@
 title: Kamellia Hyacinth
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: 
 
 # Full name (for SEO)
 first_name: Kamellia
@@ -47,8 +47,8 @@ profiles:
     url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
+  - Health Law & Advocacy 
+  - Public Health
   - Patient Centered Care
 
 education:
@@ -113,15 +113,15 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: Microsoft Offie
         description: ''
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: Epic 
         description: ''
         percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: Public Health Systems
         description: ''
         percent: 40
         icon: circle-stack
@@ -184,4 +184,5 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Detail-oriented Administrative and Public Health Professional with expertise in healthcare operations, IT systems, and compliance. Skilled in coordinating meetings, managing communications, and maintaining accurate records while ensuring confidentiality and efficiency. Strong background in health informatics, data management, and leveraging technology to optimize administrative processes.
+Experience includes event planning, report generation, and supporting cross-functional teams to enhance operational effectiveness. A background as a U.S. Army Specialist brings precision, adaptability, and problem-solving to healthcare administration and public health initiatives. Dedicated to streamlining workflows, improving system efficiencies, and driving excellence in both healthcare and technology-driven environments.
