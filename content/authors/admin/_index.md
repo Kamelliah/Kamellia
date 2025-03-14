@@ -62,7 +62,7 @@ education:
     summary: |
     GPA: 3.8/4.0
   
-        
+
   - area: MSc. Healthcare Administration
     institution: University of Wisconsin La - Crosse
     date_start: 2023-05-28
