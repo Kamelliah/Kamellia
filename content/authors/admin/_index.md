@@ -145,13 +145,38 @@ work:
       - Coordinated 20+ medical and therapy appointments monthly for individuals with disabilities and chronic conditions, ensuring continuity of care.
       - Maintained detailed medical records and care logs, ensuring accurate provider follow-ups and effective case coordination.
       - Provided leadership in high-pressure environments, applying problem-solving and adaptability skills.
+   
+volunteer_leadership:
+  - title: Graduate Student Council Member
+    organization: University of Wisconsin-La Crosse
+    date_start: 2024
+    show_present: true
+    summary: |
+      - Advocate for graduate student interests, contributing to policy discussions and institutional improvements.
+      - Collaborate with university leadership to enhance student experiences, academic policies, and campus resources.
+
+  - title: Election Official
+    organization: State of Wisconsin
+    date_start: 2024
+    show_present: true
+    summary: |
+      - Support electoral integrity by managing voter registration, assisting the public, and ensuring adherence to election policies.
+      - Facilitate smooth voting processes during elections, maintaining compliance with state and federal regulations.
+
+  - title: Petroleum Supply Specialist
+    organization: U.S. Army
+    date_start: 2021
+    date_end: 2024
+    summary: |
+      - Led fuel logistics operations, ensuring efficiency, mission readiness, and adherence to military safety protocols.
+      - Provided leadership in high-pressure environments, demonstrating adaptability, strategic planning, and problem-solving.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Microsoft Offie
+      - name: Microsoft Office
         description: ''
         percent: 80
         icon: code-bracket
@@ -190,39 +215,20 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 Professional Development:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
+  - title: Healthcare Law
+    url: https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb
+    date: '2023-04-06'
     awarder: Coursera
     icon: coursera
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
+      Completed the Healthcare Law Specialization at the University of Pennsylvania (Coursera), covering U.S Health Law, HIPPA, Intellectual property in healthcare and comparative health systems. Examined legal frameworks shaping patient-provider relationships, medical research, and emerging ethical issues in healthcare technoology.
+  - title: Health IT Support
+    url: https://coursera.org/share/24cbdc5c6b1bc3e1fa86718526c1d5c4
+    date: '2022-11-08'
     awarder: Coursera
     icon: Coursera
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: Coursera
-    icon: Coursera
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: OSHA Academy
-    icon: Osha Academy
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Gained expertise in health information technology (HIT), EHR systems, HIPAA compliance, cybersecurity, and IT support in healthcare operations. Learned how IT enhances patient safety, workflow optimization, and regulatory compliance while supporting medical teams.
 ---
 
 ## About Me
