@@ -21,12 +21,15 @@ sections:
       username: admin
     design:
       show_skill_percentage: false
+      spacing: "2rem"  # ✅ Reduce space below this section
 
-  - block: resume-awards  # ✅ USE THIS, since Hugo expects "awards"
+  - block: resume-awards
     content:
-      title: Professional Development  # ✅ Rename it visually
+      title: Professional Development
       username: admin
-
+    design:
+      spacing: "4rem"  # ✅ Add more space BELOW this section
+    
   - block: resume-languages
     content:
       title: Languages
