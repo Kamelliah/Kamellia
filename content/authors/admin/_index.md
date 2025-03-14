@@ -123,14 +123,17 @@ skills:
         icon: circle-stack  # Database icon for Epic (Electronic Health Records)
       - name: Public Health Systems
         percent: 40
-        icon: hospital-building  # Hospital icon for Public Health Systems
+        icon: hospital  # Hospital icon for Public Health Systems
 
   - name: Hobbies
     items:
       - name: Traveling
         percent: 60
-        icon: airplane  # Airplane for travel
-      - name: Volunteering
+        icon: airplane  # Airplane for travel    
+      - name: Hiking
+        percent: 60
+        icon: airplane  # Airplane for travel     
+      - name: person-simple-walk
         percent: 100
         icon: hand-heart  # Volunteering/helping hand
 
