@@ -23,7 +23,7 @@ sections:
       show_skill_percentage: false
       spacing: "4rem"  # ✅ Add spacing between this section and the next one
 
-    - block: resume-awards  # ✅ USE THIS, since Hugo expects "awards"
+  - block: resume-awards  # ✅ USE THIS, since Hugo expects "awards"
     content:
       title: Professional Development  # ✅ Rename it visually
       username: admin
@@ -33,3 +33,4 @@ sections:
       title: Languages
       username: admin
 ---
+
