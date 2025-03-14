@@ -55,17 +55,17 @@ interests:
   - Political Strategy and Policy Outreach
 
 education:
- - area: MSc. Public Health
+  - area: MSc. Public Health
     institution: University of Wisconsin - Madison
     date_start: 2025-08-28
     date_end: 2027-05-17
     summary: |
       GPA: 3.8/4.0
-   
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        
   - area: MSc. Healthcare Administration
     institution: University of Wisconsin La - Crosse
     date_start: 2023-05-28
@@ -82,11 +82,11 @@ education:
     date_end: 2015-12-31
     summary: |
       GPA: 3.8/4.0
-
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        
 #  - area: BSc Artificial Intelligence
 #    institution: Massachusetts Institute of Technology
 #    date_start: 2016-01-01
