@@ -14,6 +14,7 @@ sections:
     design:
       date_format: 'January 2006'
       is_education_first: false
+      spacing: "0rem"  # ✅ Reduce space below this section
 
   - block: resume-skills
     content:
@@ -28,7 +29,7 @@ sections:
       title: Professional Development
       username: admin
     design:
-      spacing: "4rem"  # ✅ Add more space BELOW this section
+      spacing: "1rem"  # ✅ Add more space BELOW this section
     
   - block: resume-languages
     content:
