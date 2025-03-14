@@ -118,31 +118,6 @@ work:
       - Maintained detailed medical records and care logs, ensuring accurate provider follow-ups and effective case coordination.
       - Provided leadership in high-pressure environments, applying problem-solving and adaptability skills.
 
-volunteer_leadership:
-  - title: Graduate Student Council Member
-    organization: University of Wisconsin-La Crosse
-    date_start: 2024
-    date_end: null  # Fixed "Present" issue
-    summary: |
-      - Advocate for graduate student interests, contributing to policy discussions and institutional improvements.
-      - Collaborate with university leadership to enhance student experiences, academic policies, and campus resources.
-
-  - title: Election Official
-    organization: State of Wisconsin
-    date_start: 2024
-    date_end: null  # Fixed "Present" issue
-    summary: |
-      - Support electoral integrity by managing voter registration, assisting the public, and ensuring adherence to election policies.
-      - Facilitate smooth voting processes during elections, maintaining compliance with state and federal regulations.
-
-  - title: Petroleum Supply Specialist
-    organization: U.S. Army
-    date_start: 2021
-    date_end: 2024
-    summary: |
-      - Led fuel logistics operations, ensuring efficiency, mission readiness, and adherence to military safety protocols.
-      - Provided leadership in high-pressure environments, demonstrating adaptability, strategic planning, and problem-solving.
-
 skills:
   - name: Technical Skills
     items:
