@@ -23,12 +23,10 @@ sections:
       show_skill_percentage: false
       spacing: "4rem"  # ✅ Add spacing between this section and the next one
 
-  - block: resume-custom
+    - block: resume-awards  # ✅ USE THIS, since Hugo expects "awards"
     content:
-      title: Professional Development
+      title: Professional Development  # ✅ Rename it visually
       username: admin
-    design:
-      spacing: "5rem"  # ✅ Ensure consistent spacing
 
   - block: resume-languages
     content:
