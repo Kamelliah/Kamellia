@@ -58,12 +58,12 @@ education:
     date_end: 2025-05-17
     GPA: 4.0/4.0
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Project Proposal on _Why LLMs are awesome_. Supervised by [Prof Jodi Olmstead](https://https://www.uwsp.edu/directory/profile/jodi-olmsted/). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
-      text: 'Read Portfolio'
+      text: 'Read Proposal'
       url: 'https://example.com'
   - area: BSc. Information Technology
-    institution: Massachusetts Institute of Technology
+    institution: St. George's University 
     date_start: 2011-01-21
     date_end: 2015-12-31
     summary: |
