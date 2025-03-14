@@ -106,7 +106,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2024-08-01
-    date_end: Present
+    show_present: true
     summary: |2-
       Responsibilities include:
       - Enhanced compliance by revising and standardizing the employee handbook, contributing to a 15% improvement in staff retention.
@@ -117,7 +117,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2024-01-09
-    show_present: true
+    date_end: 2024-05-01
     summary: |
       Responsibilities include:
       - Ensured compliance with quality and operational standards, refining scheduling workflows for home care services.
@@ -134,6 +134,17 @@ work:
       - Managed patient scheduling & compliance processes for 200+ daily appointments at UW Health, reducing scheduling conflicts by 20%.
       - Provided general administrative support for Sand County Foundation, WAICU & Madison Metropolitan School District, including donor tracking, database management, and record-keeping.
       - Optimized workflows in healthcare, nonprofit, and education sectors, improving efficiency across multiple organizations.
+  - position: Home and Community-Based Care Provider
+    company_name: Private Clientele
+    company_url: ''
+    company_logo: ''
+    date_start: 2017-04-01
+    date_end: 2021-07-21
+    summary: |
+      Responsibilities include:
+      - Coordinated 20+ medical and therapy appointments monthly for individuals with disabilities and chronic conditions, ensuring continuity of care.
+      - Maintained detailed medical records and care logs, ensuring accurate provider follow-ups and effective case coordination.
+      - Provided leadership in high-pressure environments, applying problem-solving and adaptability skills.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
