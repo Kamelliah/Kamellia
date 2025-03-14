@@ -141,7 +141,7 @@ languages:
   - name: English
     percent: 100
 
-professional_development:
+awards:
   - title: "Healthcare Law"
     url: "https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb"
     date: "2023-04-06"
