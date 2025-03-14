@@ -117,7 +117,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2024-01-09
-    date_end: 2024-05-01
+    show_present: true
     summary: |
       Responsibilities include:
       - Ensured compliance with quality and operational standards, refining scheduling workflows for home care services.
