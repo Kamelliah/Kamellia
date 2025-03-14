@@ -117,22 +117,22 @@ skills:
     items:
       - name: Microsoft Office
         percent: 80
-        icon: "mdi:microsoft-office"  # Microsoft Office suite icon
+        icon: document  # Microsoft Office suite icon
       - name: Epic 
         percent: 100
-        icon: "mdi:database"  # Database icon for Epic (Electronic Health Records)
+        icon: circle-stack  # Database icon for Epic (Electronic Health Records)
       - name: Public Health Systems
         percent: 40
-        icon: "mdi:hospital-building"  # Hospital icon for Public Health Systems
+        icon: hospital-building  # Hospital icon for Public Health Systems
 
   - name: Hobbies
     items:
       - name: Traveling
         percent: 60
-        icon: "mdi:airplane"  # Airplane for travel
+        icon: airplane  # Airplane for travel
       - name: Volunteering
         percent: 100
-        icon: "mdi:hand-heart"  # Volunteering/helping hand
+        icon: hand-heart  # Volunteering/helping hand
 
 languages:
   - name: English
@@ -143,7 +143,7 @@ awards:
     url: "https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb"
     date: "2023-04-06"
     awarder: "Coursera"
-    icon: "/icons/coursera-logo-full-rgb.svg"
+    icon: coursera
     summary: |
       Completed the Healthcare Law Specialization covering U.S. Health Law, HIPAA, and legal frameworks in patient-provider relationships.
 
@@ -151,7 +151,7 @@ awards:
     url: "https://coursera.org/share/24cbdc5c6b1bc3e1fa86718526c1d5c4"
     date: "2022-11-08"
     awarder: "Coursera"
-    icon: "/icons/coursera-logo-full-rgb.svg"
+    icon: coursera
     summary: |
       Gained expertise in Health Information Technology (HIT), EHR systems, HIPAA compliance, and IT support in healthcare operations.
 
