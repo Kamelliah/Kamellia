@@ -123,19 +123,22 @@ skills:
     items:
       - name: Microsoft Office
         percent: 80
+        icon: "mdi:microsoft-office"  # Microsoft Office suite icon
       - name: Epic 
         percent: 100
+        icon: "mdi:database"  # Database icon for Epic (Electronic Health Records)
       - name: Public Health Systems
         percent: 40
+        icon: "mdi:hospital-building"  # Hospital icon for Public Health Systems
 
   - name: Hobbies
     items:
       - name: Traveling
         percent: 60
+        icon: "mdi:airplane"  # Airplane for travel
       - name: Volunteering
         percent: 100
-      - name: Photography
-        percent: 80
+        icon: "mdi:hand-heart"  # Volunteering/helping hand
 
 languages:
   - name: English
