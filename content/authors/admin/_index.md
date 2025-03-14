@@ -1,6 +1,6 @@
 ---
 # Display name 
-title: Kamellia Hyacinth
+title: Kamellia Hyacinth 
 
 # Name pronunciation (optional)
 name_pronunciation: 
