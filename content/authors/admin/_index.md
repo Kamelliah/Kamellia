@@ -54,13 +54,6 @@ interests:
   - Political Strategy and Policy Outreach
 
 education:
-  - area: MSc. Public Health
-    institution: University of Wisconsin - Madison
-    date_start: 2025-08-28
-    date_end: 2027-05-17
-    summary: |
-      GPA: 3.8/4.0
-
   - area: MSc. Healthcare Administration
     institution: University of Wisconsin - La Crosse
     date_start: 2023-05-28
@@ -68,9 +61,9 @@ education:
     summary: |
       GPA: 4.0/4.0
 
-    Project Proposal on _Why LLMs are awesome_.
-    Supervised by [Prof Jodi Olmstead](https://www.uwsp.edu/directory/profile/jodi-olmstead/).
-    Presented papers at 5 IEEE conferences with contributions published in 2 Springer journals.
+      Project Proposal on _Why LLMs are awesome_.  
+      Supervised by [Prof Jodi Olmstead](https://www.uwsp.edu/directory/profile/jodi-olmstead/).  
+      Presented papers at 5 IEEE conferences with contributions published in 2 Springer journals.
     button:
       text: 'Read Proposal'
       url: 'https://example.com'
