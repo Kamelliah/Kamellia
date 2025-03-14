@@ -205,7 +205,7 @@ languages:
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-professional_development
+professional_development:
    - title: Healthcare Law
     url: https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb
     date: '2023-04-06'
