@@ -168,7 +168,7 @@ languages:
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
+Professional Development:
   - title: Neural Networks and Deep Learning
     url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2023-11-25'
@@ -179,8 +179,8 @@ awards:
   - title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     date: '2023-07-01'
-    awarder: edX
-    icon: edx
+    awarder: Coursera
+    icon: Coursera
     summary: |
       Learned:
       - Synthesize your own blockchain solutions
@@ -190,13 +190,22 @@ awards:
     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
     certificate_url: https://www.datacamp.com
     date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
+    awarder: Coursera
+    icon: Coursera
+    summary: |
+      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+  - title: 'Object-Oriented Programming in R'
+    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
+    certificate_url: https://www.datacamp.com
+    date: '2023-01-21'
+    awarder: OSHA Academy
+    icon: Osha Academy
     summary: |
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 ## About Me
 
-Detail-oriented Administrative and Public Health Professional with expertise in healthcare operations, IT systems, and compliance. Skilled in coordinating meetings, managing communications, and maintaining accurate records while ensuring confidentiality and efficiency. Strong background in health informatics, data management, and leveraging technology to optimize administrative processes.
-Experience includes event planning, report generation, and supporting cross-functional teams to enhance operational effectiveness. A background as a U.S. Army Specialist brings precision, adaptability, and problem-solving to healthcare administration and public health initiatives. Dedicated to streamlining workflows, improving system efficiencies, and driving excellence in both healthcare and technology-driven environments.
+Healthcare administration professional with a strong foundation in public health, health IT.
+Passionate about healthcare policy, operations, and technology-driven solutions to improve efficiency and patient outcomes. Focused on epidemiology, health advocacy, and regulatory compliance, with a keen interest in data-driven decision-making and healthcare innovation.
+Background in military leadership fosters discipline, strategic thinking, and adaptability in dynamic healthcare environments. Dedicated to leveraging technology, policy, and operational strategies to contribute to healthcare transformation and public health initiatives.
