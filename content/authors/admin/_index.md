@@ -67,7 +67,10 @@ education:
     date_end: 2025-05-17
     summary: |
       GPA: 4.0/4.0
-    Project Proposal on _Why LLMs are awesome_. Supervised by [Prof Jodi Olmstead](https://www.uwsp.edu/directory/profile/jodi-olmstead/). Presented papers at 5 IEEE conferences with contributions published in 2 Springer journals.
+
+    Project Proposal on _Why LLMs are awesome_.
+    Supervised by [Prof Jodi Olmstead](https://www.uwsp.edu/directory/profile/jodi-olmstead/).
+    Presented papers at 5 IEEE conferences with contributions published in 2 Springer journals.
     button:
       text: 'Read Proposal'
       url: 'https://example.com'
