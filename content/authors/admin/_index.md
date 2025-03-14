@@ -61,6 +61,7 @@ education:
     date_end: 2027-05-17
     summary: |
       GPA: 3.8/4.0
+    
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -82,6 +83,7 @@ education:
     date_end: 2015-12-31
     summary: |
       GPA: 3.8/4.0
+    
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -99,28 +101,39 @@ education:
  #    - lorem ipsum dolor sit amet, consectetur adipiscing elit
  #    - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Healthcare Operations & Policy Intern
+    company_name: Circle Of Hope, Inc II
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+    date_start: 2024-08-01
+    date_end: Present
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Enhanced compliance by revising and standardizing the employee handbook, contributing to a 15% improvement in staff retention.
+      - Optimized hiring processes, reducing recruitment costs by 20% through platform analysis and budget reallocation.
+      - Increased operational efficiency by streamlining onboarding and policy audits, cutting administrative processing time by 30% and ensuring 100% regulatory compliance.
+  - position: Admissions Coordinator (Part-Time)
+    company_name: Interim Healthcare
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2024-01-09
+    date_end: 2024-05-01
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Ensured compliance with quality and operational standards, refining scheduling workflows for home care services.
+      - Developed cost-effective hiring strategies, optimizing recruitment costs by 25% through platform analysis and budget reallocation.
+      - Streamlined onboarding and policy audits, cutting administrative processing time by 40% and ensuring 100% compliance with updated policies.
+  - position: Healthcare and Administrative Specialist
+    company_name: The QTI Group/Drake and Staffing Company Solutions
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-10-09
+    date_end: 2023-07-21
+    summary: |
+      Responsibilities include:
+      - Managed patient scheduling & compliance processes for 200+ daily appointments at UW Health, reducing scheduling conflicts by 20%.
+      - Provided general administrative support for Sand County Foundation, WAICU & Madison Metropolitan School District, including donor tracking, database management, and record-keeping.
+      - Optimized workflows in healthcare, nonprofit, and education sectors, improving efficiency across multiple organizations.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -143,26 +156,23 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Travelling
         description: ''
         percent: 60
-        icon: person-simple-walk
-      - name: Cats
+        icon: 
+      - name: Volunteering
         description: ''
         percent: 100
         icon: cat
       - name: Photography
         description: ''
         percent: 80
-        icon: camera
+        icon: 
 
 languages:
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+
 
 # Awards.
 #   Add/remove as many awards below as you like.
