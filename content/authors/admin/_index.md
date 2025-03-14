@@ -201,25 +201,27 @@ languages:
     percent: 100
 
 
-# Professional Development.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+# Professional Development
+# Add/remove as many items as needed.
+# Only `title`, `awarder`, and `date` are required.
+# Use YAML's `|` or `|2-` for multi-line summaries.
+
 professional_development:
-   - title: Healthcare Law
-    url: https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb
-    date: '2023-04-06'
-    awarder: Coursera
-    icon: coursera
+  - title: "Healthcare Law"
+    url: "https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb"
+    date: "2023-04-06"
+    awarder: "Coursera - University of Pennsylvania"
+    icon: "coursera"
     summary: |
-      Completed the Healthcare Law Specialization at the University of Pennsylvania (Coursera), covering U.S Health Law, HIPPA, Intellectual property in healthcare and comparative health systems. Examined legal frameworks shaping patient-provider relationships, medical research, and emerging ethical issues in healthcare technoology.
-  - title: Health IT Support
-    url: https://coursera.org/share/24cbdc5c6b1bc3e1fa86718526c1d5c4
-    date: '2022-11-08'
-    awarder: Coursera
-    icon: Coursera
+      Completed the Healthcare Law Specialization at the University of Pennsylvania (Coursera), covering U.S. Health Law, HIPAA, Intellectual Property in healthcare, and comparative health systems. Examined legal frameworks shaping patient-provider relationships, medical research, and emerging ethical issues in healthcare technology.
+
+  - title: "Health IT Support"
+    url: "https://coursera.org/share/24cbdc5c6b1bc3e1fa86718526c1d5c4"
+    date: "2022-11-08"
+    awarder: "Coursera - Google"
+    icon: "coursera"
     summary: |
-      Gained expertise in health information technology (HIT), EHR systems, HIPAA compliance, cybersecurity, and IT support in healthcare operations. Learned how IT enhances patient safety, workflow optimization, and regulatory compliance while supporting medical teams.
+      Gained expertise in Health Information Technology (HIT), EHR systems, HIPAA compliance, cybersecurity, and IT support in healthcare operations. Learned how IT enhances patient safety, workflow optimization, and regulatory compliance.
 ---
 
 ## About Me
