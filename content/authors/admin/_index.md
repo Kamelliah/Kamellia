@@ -62,7 +62,7 @@ education:
     summary: |
       GPA: 3.8/4.0
     
-      Courses included:
+ #     Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -84,7 +84,7 @@ education:
     summary: |
       GPA: 3.8/4.0
     
-      Courses included:
+#      Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -210,12 +210,11 @@ languages:
     percent: 100
 
 
-# Awards.
+# Professional Development.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-Professional Development:
-  - title: Healthcare Law
+ - title: Healthcare Law
     url: https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb
     date: '2023-04-06'
     awarder: Coursera
