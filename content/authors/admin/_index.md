@@ -146,6 +146,7 @@ awards:
     url: "https://coursera.org/share/04f1fd45a7e1925d8c101bac5947c9fb"
     date: "2023-04-06"
     awarder: "Coursera"
+    icon: "custom/coursera-logo-full-rgb.svg"
     summary: |
       Completed the Healthcare Law Specialization covering U.S. Health Law, HIPAA, and legal frameworks in patient-provider relationships.
 
@@ -153,6 +154,7 @@ awards:
     url: "https://coursera.org/share/24cbdc5c6b1bc3e1fa86718526c1d5c4"
     date: "2022-11-08"
     awarder: "Coursera"
+    icon: "custom/coursera-logo-full-rgb.svg"
     summary: |
       Gained expertise in Health Information Technology (HIT), EHR systems, HIPAA compliance, and IT support in healthcare operations.
 
