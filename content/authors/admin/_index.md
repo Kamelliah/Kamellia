@@ -67,13 +67,13 @@ education:
     summary: |
       GPA: 4.0/4.0
 
-    Capstone Project: _Refining Employee Policies and Hiring Strategies_  
-    Supervised by Ms. Kristen Simmons & Ms. Maeve Tworek at Circle of Hope, Inc II.  
-    Academic Guidance by [Prof. Jodi Olmstead](https://www.uwsp.edu/directory/profile/jodi-olmstead/).  
-    Focused on optimizing hiring practices, updating employee handbooks, and improving onboarding processes.
-  button:
-    text: 'Read Proposal'
-    url: 'https://example.com'
+      Capstone Project: _Refining Employee Policies_  
+      Supervised by Ms. Kristen Simmons & Ms. Maeve Tworek.  
+      Academic Guidance by [Prof. Jodi Olmstead](https://www.uwsp.edu/directory/profile/jodi-olmstead/).  
+      Focused on optimizing hiring practices, updating employee handbooks, and improving onboarding processes at Circle of Hope, Inc II.
+    button:
+      text: "Read Proposal"
+      url: "https://example.com"
 
   - area: BSc. Information Technology
     institution: St. George's University 
