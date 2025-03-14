@@ -60,7 +60,7 @@ education:
     date_start: 2025-08-28
     date_end: 2027-05-17
     summary: |
-      GPA: 3.8/4.0
+          GPA: 3.8/4.0
     
  #     Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
