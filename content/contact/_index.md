@@ -1,8 +1,7 @@
 ---
 title: "Contact Me"
 date: 2025-03-15
-type: page
-layout: page
+type: landing
 menu:
   main:
     weight: 50  # Controls menu order
@@ -18,10 +17,6 @@ sections:
       show_social: true
       form: true
 
-    design:
-      show_border: false
-      show_background: false
-
   - block: map
     content:
       title: "Find Me Here"
@@ -32,21 +27,16 @@ sections:
         lon: -89.424095
         zoom: 15
 
-    design:
-      show_border: false
-      show_background: false
-
   - block: hours
     content:
       title: "Hours of Operation"
       text: "Available for inquiries during these hours."
       schedule:
-        - "Monday - Friday: 9:00 AM - 3:00 PM"
-        - "Saturday: Closed"
-        - "Sunday: Closed"
+        - day: "Monday - Friday"
+          time: "9:00 AM - 3:00 PM"
+        - day: "Saturday"
+          time: "Closed"
+        - day: "Sunday"
+          time: "Closed"
 
-    design:
-      show_border: true
-      show_background: false
----
 
