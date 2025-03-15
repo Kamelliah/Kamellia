@@ -5,22 +5,16 @@ type: landing
 layout: page
 menu:
   main:
-    weight: 50  # Controls menu order
+    weight: 50
 
 sections:
-  - block: form  # Change from 'contact' to 'form'
+  - block: hero  # Using 'hero' instead of 'contact' or 'form'
     content:
       title: "Get in Touch"
       text: "Feel free to reach out for collaborations, opportunities, or just to say hi!"
-      email: "your.email@example.com"
-      phone: "+1 (123) 456-7890"
-      address: "Your City, Country"
-      show_social: true
-      form: true  # Enables the contact form
-
-    design:
-      show_border: false
-      show_background: false
+      button:
+        text: "Email Me"
+        url: "mailto:your.email@example.com"
 
   - block: map
     content:
