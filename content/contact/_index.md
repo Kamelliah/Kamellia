@@ -1,7 +1,7 @@
 ---
 title: "Contact Me"
 date: 2025-03-15
-type: landing
+type: page
 layout: page
 menu:
   main:
