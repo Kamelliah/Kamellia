@@ -36,16 +36,19 @@ header:
     show_theme_chooser: true
     logo:
       text: "Kamellia Hyacinth"
-
+      
 # Site footer
 footer:
   copyright:
     notice: '© 2025 Kamellia Hyacinth. All rights reserved.'
     license:
-      enable: true
+      enable: false  # Disables the default license message
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
+  builder:
+    enable: false  # ✅ This removes "Published with Hugo Blox Builder"
+
 
 # Localization
 locale:
