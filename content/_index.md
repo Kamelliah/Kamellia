@@ -14,7 +14,7 @@ sections:
       text: ""
       button:
         text: Download Resume
-        url: "https://kamelliah.github.io/Kamellia/uploads/Kamellia_Hyacinth_Resume.pdf"
+         url: '/uploads/Kamellia_Hyacinth_Resume.pdf'
     design:
       css_class: dark
       background:
