@@ -159,32 +159,6 @@ awards:
     summary: |
       Gained expertise in Health Information Technology (HIT), EHR systems, HIPAA compliance, and IT support in healthcare operations.
 
-# Contact Information (Needed for Contact Page)
-contact:
-  email: "your.email@example.com"
-  phone: "+1 (123) 456-7890"
-  address: "Your City, Country"
-  show_social: true
-  form: true  # Enables the contact form
-
-# Map Location
-map:
-  provider: google
-  lat: 43.002316
-  lon: -89.424095
-  zoom: 15
-
-# Hours of Operation
-hours:
-  schedule:
-    - day: "Monday - Friday"
-      time: "9:00 AM - 3:00 PM"
-    - day: "Saturday"
-      time: "Closed"
-    - day: "Sunday"
-      time: "Closed"
-
-
 ---
 ## About Me
 
