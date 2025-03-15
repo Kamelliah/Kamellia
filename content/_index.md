@@ -27,14 +27,15 @@ sections:
           position: center
           parallax: false
 
-  - block: markdown
-    content:
-      title: '📂 My Portfolio'
-      text: "A showcase of projects, case studies, and work samples in healthcare administration, public health, and IT."
+- block: markdown
+  content:
+    title: '📂 My Portfolio'
+    text: "A showcase of work samples in healthcare administration."
+    button:
       text: "See My Work"
       url: "/portfolio/"
-    design:
-      columns: '1'
+  design:
+    columns: '1'
 
 
   - block: collection
