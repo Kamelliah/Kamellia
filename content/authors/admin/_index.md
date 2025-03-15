@@ -66,7 +66,7 @@ education:
       Focused on optimizing hiring practices, updating employee handbooks, and improving onboarding processes at Circle of Hope, Inc II.
     button:
       text: "Read Proposal"
-      url: "https://kamelliah.github.io/uploads/Project_Proposal.pdf"
+      url: "{{ `uploads/Project_Proposal.pdf` | relURL }}"
 
   - area: BSc. Information Technology
     institution: St. George's University 
