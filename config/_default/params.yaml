@@ -61,4 +61,10 @@ features:
     enable: false
   privacy_pack:
     enable: false
-
+    
+# Enable additional Hugo Blox modules
+blox:
+  include:
+    - "map"
+    - "contact"
+    - "form"
