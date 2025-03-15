@@ -1,6 +1,10 @@
 title: "Contact Me"
 date: 2025-03-15
 type: landing
+  menu:
+  main:
+    weight: 50  # Matches the navigation order
+
 
 sections:
   - block: contact
