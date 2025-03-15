@@ -8,7 +8,7 @@ menu:
     weight: 50  # Controls menu order
 
 sections:
-  - block: contact
+  - block: form  # Change from 'contact' to 'form'
     content:
       title: "Get in Touch"
       text: "Feel free to reach out for collaborations, opportunities, or just to say hi!"
@@ -16,7 +16,7 @@ sections:
       phone: "+1 (123) 456-7890"
       address: "Your City, Country"
       show_social: true
-      form: true
+      form: true  # Enables the contact form
 
     design:
       show_border: false
@@ -49,4 +49,5 @@ sections:
       show_border: true
       show_background: false
 ---
+
 
