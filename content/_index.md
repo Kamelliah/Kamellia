@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: "6rem"
+  spacing: "3rem"
 
 sections:
   - block: resume-biography-3
@@ -31,8 +31,11 @@ sections:
     content:
       title: '📂 My Portfolio'
       text: "A showcase of projects, case studies, and work samples in healthcare administration, public health, and IT."
+      text: "See My Work"
+      url: "/portfolio/"
     design:
       columns: '1'
+
 
   - block: collection
     id: news
