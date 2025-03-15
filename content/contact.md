@@ -21,3 +21,5 @@ sections:
   - block: hours
     content:
       username: admin  # Pulls hours of operation from a central place
+
+    ---
