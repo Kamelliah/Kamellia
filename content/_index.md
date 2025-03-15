@@ -26,7 +26,7 @@ sections:
           size: cover
           position: center
           parallax: false
-
+    
   - block: collection
     id: news
     content:
@@ -43,7 +43,8 @@ sections:
     design:
       view: date-title-summary
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: ["2rem", 0, 0, 0]  # Adds space at the top
+
 
   - block: cta-card
     demo: true
