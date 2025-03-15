@@ -26,6 +26,55 @@ sections:
           size: cover
           position: center
           parallax: false
+
+- block: contact
+    id: contact
+    content:
+      title: Contact
+      subtitle:
+      text: |-
+        Book an appointment or contact me using the information below
+      # Contact (add or remove contact options as necessary)
+      appointment_url: 'https://calendly.com/jasonsamlucas/meeting'
+      email: jsl5710@psu.edu
+      phone: 954 864 4494
+      address:
+        street: 123 S Burrowes St
+        city: State College 
+        region: PA
+        postcode: '16801'
+        country: United States
+        country_code: US
+      directions: Enter Building and take the elevator or stairs to the 4th Floor, locate College of IST.
+      office_hours:
+        - 'Monday 09:00 to 17:00'
+        - 'Wednesday 09:00 to 17:00'
+      # Choose a map provider in `params.yaml` to show a map from these coordinates
+      coordinates:
+        latitude: '40.792263'
+        longitude: '-77.863333' 
+      contact_links:
+        
+        # - icon: skype
+        #   icon_pack: fab
+        #   name: Skype Me
+        #   link: 'skype:echo123?call'
+        - icon: video
+          icon_pack: fas
+          name: Zoom Me
+          link: 'https://psu.zoom.us/my'
+      # Automatically link email and phone or display as text?
+      autolink: true
+      # Email form provider
+      # form:
+      #   provider: netlify
+      #   formspree:
+      #     id:
+      #   netlify:
+      #     # Enable CAPTCHA challenge to reduce spam?
+      #     captcha: false
+    design:
+      columns: '2'
     
   - block: collection
     id: news
