@@ -14,7 +14,7 @@ sections:
       text: ""
       button:
         text: Download Resume
-         url: '/uploads/Kamellia_Hyacinth_Resume.pdf'
+        url: "/uploads/Kamellia_Hyacinth_Resume.pdf"  # ✅ Fixed indentation
     design:
       css_class: dark
       background:
@@ -43,8 +43,7 @@ sections:
     design:
       view: date-title-summary
       spacing:
-        padding: ["2rem", 0, 0, 0]  # Adds space at the top
-
+        padding: ["2rem", 0, 0, 0]  # ✅ Moved comment out of YAML structure
 
   - block: cta-card
     demo: true
@@ -57,6 +56,3 @@ sections:
     design:
       card:
         css_class: "bg-primary-700"
-
----
-
