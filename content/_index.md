@@ -27,16 +27,15 @@ sections:
           position: center
           parallax: false
 
-- block: markdown
-  content:
-    title: '📂 My Portfolio'
-    text: "A showcase of work samples in healthcare administration."
-    button:
-      text: "See My Work"
-      url: "/portfolio/"
-  design:
-    columns: '1'
-
+  - block: markdown  # ✅ Correctly placed inside `sections`
+    content:
+      title: '📂 My Portfolio'
+      text: "A showcase of work samples in healthcare administration."
+      button:
+        text: "See My Work"
+        url: "/portfolio/"
+    design:
+      columns: '1'
 
   - block: collection
     id: news
@@ -67,6 +66,6 @@ sections:
     design:
       card:
         css_class: "bg-primary-700"
----
+
 
 
