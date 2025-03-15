@@ -4,7 +4,7 @@ date: 2023-10-24
 type: landing
 
 design:
-  spacing: '3rem'  # ✅ Set global spacing, but avoid per-section spacing issues
+  spacing: '1.5rem'  # ✅ Set global spacing, but avoid per-section spacing issues
 
 sections:
   - block: resume-experience
