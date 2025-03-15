@@ -2,6 +2,7 @@
 title: "Contact Me"
 date: 2025-03-15
 type: landing
+layout: page
 menu:
   main:
     weight: 50  # Controls menu order
