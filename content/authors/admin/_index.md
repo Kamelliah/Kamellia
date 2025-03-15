@@ -158,7 +158,6 @@ awards:
     summary: |
       Gained expertise in Health Information Technology (HIT), EHR systems, HIPAA compliance, and IT support in healthcare operations.
 
-
 title: "Contact Me"
 date: 2025-03-15
 type: landing
@@ -184,8 +183,8 @@ sections:
       text: "Here’s my location on the map."
       map:
         provider: google  # Supports 'google' or 'openstreetmap'
-        lat: 40.712776  # Replace with your latitude
-        lon: -74.005974  # Replace with your longitude
+        lat: 43.002316  # Replace with your latitude
+        lon: -89.424095  # Replace with your longitude
         zoom: 15  # Adjust zoom level
 
     design:
@@ -197,16 +196,14 @@ sections:
       title: "Hours of Operation"
       text: "Available for inquiries during these hours."
       schedule:
-        - day: "Monday - Friday"
-          time: "9:00 AM - 3:00 PM"
-        - day: "Saturday"
-          time: "Closed"
-        - day: "Sunday"
-          time: "Closed"
+        - "Monday - Friday: 9:00 AM - 3:00 PM"
+        - "Saturday: Closed"
+        - "Sunday: Closed"
 
     design:
       show_border: true
       show_background: false
+
 
 
 ---
