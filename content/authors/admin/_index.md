@@ -1,172 +1,108 @@
----
-# Display name
 title: Kamellia Hyacinth
 
-# Name pronunciation (optional)
 name_pronunciation: Chien Shiung Wu
 
-# Full name (for SEO)
 first_name: Kamellia
 last_name: Hyacinth
 
-# Status emoji
 status:
-  icon: ☕️
+  icon: "☕️"
 
-# Is this the primary user of the site?
 superuser: true
 
-# Role/position/tagline
-role: MSHCA Student
+role: Healthcare Administration & Public Health Professional
 
-# Organizations/Affiliations to display in Biography blox
 organizations:
   - name: University of Wisconsin - La Crosse
-    url: https://www.uwlax.edu/
+    url: "https://www.uwlax.edu/"
+  - name: University of Wisconsin - Madison
+    url: "https://www.wisc.edu/"
+  - name: American College of Healthcare Executives
+    url: "https://www.ache.org/"
+  - name: Wisconsin Public Health Association
+    url: "https://www.wpha.org/"
 
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:kamelliahyacinth@gmail.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: "mailto:kamelliahyacinth@gmail.com"
+    label: "E-mail Me"
+  - icon: brands/twitter
+    url: "https://twitter.com/GetResearchDev"
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: "https://github.com/kamelliah"
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/kamellia
+    url: "https://www.linkedin.com/in/kamelliahyacinth"
   - icon: brands/instagram
-    url: https://www.instagram.com/kamelliah
+    url: "https://www.instagram.com/kamelliah"
+  - icon: globe
+    url: "https://www.kamelliahyacinth.com"
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: Master of Science in Public Health
+    institution: University of Wisconsin - Madison
+    date_start: "2025-09-01"
+    date_end: "2027-05-31"
+  - area: Master of Science in Healthcare Administration
+    institution: University of Wisconsin - La Crosse
+    date_start: "2023-09-01"
+    date_end: "2025-05-31"
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Proposal'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      GPA: 4.0/4.0
+  - area: Bachelor of Science in Information Technology
+    institution: St. George's University
+    date_start: "2012-09-01"
+    date_end: "2015-12-31"
     summary: |
-      GPA: 3.8/4.0
+      GPA: 3.3/4.0
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: devicon/python
-      - name: RStudio
-        description: ''
-        percent: 100
-        icon: devicon/rstudio
-      - name: PyTorch
-        description: ''
-        percent: 40
-        icon: devicon/pytorch
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
-
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
+  - title: HIPAA Certification
+    date: "2024"
+    awarder: Healthcare Compliance Association
+  - title: Healthcare IT Certification
+    date: "2022"
+    awarder: HIMSS
+  - title: Healthcare Law Certification
+    date: "2023"
+    awarder: American Health Law Association
   - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
+    url: "https://www.coursera.org/learn/neural-networks-deep-learning"
+    date: "2023-11-25"
     awarder: Coursera
     icon: coursera
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+      Studied foundational neural network concepts and deep learning applications, including training deep neural networks.
   - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
+    url: "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
+    date: "2023-07-01"
     awarder: edX
-    icon: edx
+    icon: edX
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
+      Covered blockchain architecture, Bitcoin mechanics, and security vulnerabilities in smart contracts.
+  - title: Object-Oriented Programming in R
+    url: "https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r"
+    date: "2023-01-21"
+    awarder: DataCamp
     icon: datacamp
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
----
+      Explored object-oriented programming in R using the S3 and R6 systems to manage code complexity.
+  - title: Advanced TensorFlow for Deep Learning
+    url: "https://www.coursera.org/learn/advanced-tensorflow"
+    date: "2023-05-10"
+    awarder: Coursera
+    icon: coursera
+    summary: |
+      Gained in-depth knowledge of TensorFlow for complex deep learning models and model optimization techniques.
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+leadership:
+  - title: Graduate Student Council Member
+    organization: University of Wisconsin - La Crosse
+    date_start: "2024"
+    summary: |
+      Advocate for graduate student interests, contribute to policy discussions, and collaborate with university leadership.
+  - title: Election Official
+    organization: State of Wisconsin
+    date_start: "2024"
+    summary: |
+      Support electoral integrity by managing voter registration and ensuring adherence to election policies.
+---
